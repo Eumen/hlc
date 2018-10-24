@@ -60,7 +60,11 @@ jQuery(document).ready(function(){
         e.stopPropagation();
         jQuery(this).siblings(".input_0").focus();
     });
+    jQuery("#btnRegister").click(function(){
+		window.location.href = '__APP__/Reg/us_reg/';
+	});
 });
+
 </script> 
 <body style="width:320px;height:500px;">
 	<div id="bg"></div>
@@ -86,6 +90,7 @@ jQuery(document).ready(function(){
 				<div class="form-group"><button name="button" type="submit" id="btn_submit" style="margin-top:20px;"
 						onClick="ThinkAjax.sendForm('form1','__URL__/checkLogin/',loginHandle,'result')">登录</button>
 					<input type="hidden" name="ajax" value="1"></div>
+				<div class="form-group"><button name="button" type="button" id="btnRegister" style="margin-top:20px;">注册</button></div>
 				<div class="form-group"><div class="error" style="margin-bottom:20px;"><span id="result"></span></div></div>
 			</form>
 		</div>
@@ -176,7 +181,7 @@ function checkRadio(){
 		bgImgArr = [],
 		bgDiv = document.getElementById("bg");
 	// 组合数组 此处 5 为 图开始序号 结束 6
-	for (var i=5; i <= 6; i++){
+	for (var i=3; i <= 4; i++){
 		bgImgArr.push(bgImgUrl.replace('{num}', i));
 	}
 	setBGimg();
