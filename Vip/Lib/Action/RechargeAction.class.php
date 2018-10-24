@@ -357,7 +357,7 @@ public function aixinAC(){
 	//==============================充值管理
 	public function adminCurrencyRecharge(){
 		$this->_Admin_checkUser();
-		if ($_SESSION['UrlPTPass'] == 'MyssGuanMangGuo'){
+// 		if ($_SESSION['UrlPTPass'] == 'MyssGuanMangGuo'){
 			$chongzhi = M ('chongzhi');
 			$UserID = $_REQUEST['UserID'];
 			if (!empty($UserID)){
@@ -409,10 +409,10 @@ public function aixinAC(){
 			$this->assign('title',$title);
 			$this->display('adminCurrencyRecharge');
 			exit();
-		}else{
-			$this->error('错误!');
-			exit;
-		}
+// 		}else{
+// 			$this->error('错误!');
+// 			exit;
+// 		}
 	}
 	public function adminCurrencyRechargeAC(){
 		//处理提交按钮
@@ -445,7 +445,7 @@ public function aixinAC(){
 	
 	public function adminCurrencyRechargeAdd(){
 		//为会员充值
-		if ($_SESSION['UrlPTPass'] == 'MyssGuanMangGuo'){
+// 		if ($_SESSION['UrlPTPass'] == 'MyssGuanMangGuo'){
 			$fck = M ('fck');
 			if (!$fck->autoCheckToken($_POST)){
 				$this->error('页面过期，请刷新页面！');
@@ -485,13 +485,13 @@ public function aixinAC(){
 			}else{
 				$this->error('错误!');
 			}
-		}else{
-			$this->error('错误!');
-		}
+// 		}else{
+// 			$this->error('错误!');
+// 		}
 	}
 	
 	private function _adminCurrencyRechargeOpen($PTid){
-		if ($_SESSION['UrlPTPass'] == 'MyssGuanMangGuo'){
+// 		if ($_SESSION['UrlPTPass'] == 'MyssGuanMangGuo'){
 			$chongzhi = M ('chongzhi');
 			$fck = D('Fck');//
 			$where = array();
@@ -572,13 +572,13 @@ public function aixinAC(){
 			unset($chongzhi,$fck,$where,$rs,$fck_where,$nowdate,$history,$data);
 			$bUrl = __URL__.'/adminCurrencyRecharge';
 			$this->_box(1,'确认充值成功！',$bUrl,1);
-		}else{
-			$this->error('错误!');
-			exit;
-		}
+// 		}else{
+// 			$this->error('错误!');
+// 			exit;
+// 		}
 	}
 	private function _adminCurrencyRechargeDel($PTid){
-		if ($_SESSION['UrlPTPass'] == 'MyssGuanMangGuo'){
+// 		if ($_SESSION['UrlPTPass'] == 'MyssGuanMangGuo'){
 			$User = M ('chongzhi');
 			$where = array();
 			//			$where['is_pay'] = 0;
@@ -593,10 +593,10 @@ public function aixinAC(){
 				$this->_box(0,'删除失败！',$bUrl,1);
 				exit;
 			}
-		}else{
-			$this->error('错误!');
-			exit;
-		}
+// 		}else{
+// 			$this->error('错误!');
+// 			exit;
+// 		}
 	}
 	
 	//在线充值

@@ -72,14 +72,31 @@ function ajaxagent(){
         <td width="20%"><input name="RID" id="RID" type="text"  class="ipt" onKeyUp="guolv(this.name)" onFocus="notice('1','')" onBlur="javascript:yhServer(this.name,'1');notice('1','none')" /></td>
         <td width="60%"><div id="RID1" class="info"><div id="1" class="focus_r" style="display:none;"><div class="msg_tip">请填写推荐人。</div></div></div> </td>
       </tr>
-      <empty name="Nick_namex">
-      <else />
       <tr>
-        <td align="right"><span class="zc_hong">*</span> {$Nick_namex}：</td>
-        <td><input name="nickname" type="text" class="ipt" id="nickname" onFocus="notice('9','')"  onblur="notice('9','none')"  onKeyUp="javascript:Null_Full(this.name)" maxlength="10"/></td>
-        <td><div id="nickname1" class="info"><div id="14" class="focus_r" style="display:none;"><div class="msg_tip">请输入您的昵称。</div></div></div></td>
+        <td align="right"><span class="zc_hong">*</span> 会员登录名：</td>
+        <td><input name="UserID" type="text" class="ipt" id="UserID" onFocus="notice('14','')"  onblur="notice('14','none')"  onKeyUp="javascript:Null_Full(this.name)" maxlength="10"/></td>
+        <td><div id="UserID1" class="info"><div id="14" class="focus_r" style="display:none;"><div class="msg_tip">请输入您的会员登录名。</div></div></div></td>
       </tr>
-      </empty>
+      <tr>
+        <td align="right"><span class="zc_hong">*</span> 姓名：</td>
+        <td><input name="UserName" type="text" class="ipt"  id="UserName" onFocus="notice('9','')"  onblur="notice('9','none')" onKeyUp="javascript:Null_Full(this.name)" value="" maxlength="10" /></td>
+        <td><div id="UserName1" class="info"><div id="9" class="focus_r" style="display:none;"><div class="msg_tip">请输入您的姓名。</div></div></div></td>
+      </tr>
+      <tr>
+        <td align="right"><span class="zc_hong">*</span>身份证号：</td>
+        <td><input name="UserCode" type="text" class="ipt" id="UserCode" onFocus="notice('11','')"  onblur="notice('11','none')" onKeyUp="javascript:Null_Full(this.name)" value="" maxlength="18" /></td>
+        <td><div id="UserCode1" class="info"><div id="11" class="focus_r" style="display:none;"><div class="msg_tip">请输入您的身份证号。</div></div></div></td>
+      </tr>
+      <tr>
+        <td align="right"><span class="zc_hong">*</span>联系电话：</td>
+        <td><input name="UserTel" type="text" class="ipt"  id="UserTel" onFocus="notice('13','')"  onblur="notice('13','none')" onKeyUp="javascript:Null_Full(this.name)" value=""/></td>
+        <td><div id="UserTel1" class="info"><div id="13" class="focus_r" style="display:none;"><div class="msg_tip">请输入您的联系电话。</div></div></div></td>
+      </tr>
+      <tr>
+        <td align="right"><span class="zc_hong">*</span>微信：</td>
+        <td><input name="qq" type="text" class="ipt"  id="qq" onFocus="notice('15','')"  onblur="notice('15','none')" onKeyUp="javascript:Null_Full(this.name)" value=""/></td>
+        <td><div id="qq1" class="info"><div id="15" class="focus_r" style="display:none;"><div class="msg_tip">请输入您的微信。</div></div></div></td>
+      </tr>
       <tr>
         <td colspan="3" style="height:5px;"><hr></td>
       </tr>
@@ -118,56 +135,38 @@ function ajaxagent(){
       <tr>
         <td align="right"><span class="zc_hong">*</span> <span id="bank_id"><eq name="bank[0]" value="财付通">财付通号<else />银行卡号</eq></span>：</td>
         <td><input name="BankCard" type="text" class="ipt" id="BankCard" onFocus="notice('8','')"  onblur="notice('8','none')" onKeyUp="javascript:Null_Full(this.name)" value="" maxlength="19" /></td>
-        <td><div id="BankCard1" class="info"><div id="8" class="focus_r" style="display:none;"><div class="msg_tip">请输入您的号码。</div></div></div></td>
+        <td><div id="BankCard1" class="info"><div id="8" class="focus_r" style="display:none;"><div class="msg_tip">请输入您的银行卡号。</div></div></div></td>
       </tr>
-      <tr>
-        <td align="right"><span class="zc_hong">*</span> 开户姓名：</td>
-        <td><input name="UserName" type="text" class="ipt"  id="UserName" onFocus="notice('9','')"  onblur="notice('9','none')" onKeyUp="javascript:Null_Full(this.name)" value="" maxlength="10" /></td>
-        <td><div id="UserName1" class="info"><div id="9" class="focus_r" style="display:none;"><div class="msg_tip">请输入您的姓名。</div></div></div></td>
-      </tr>
-      <tr >
-      <td align="right">开户省份：</td>
-            <td><select name="BankProvince" id="s1" >
-                <option></option>
-              </select></td>
-            <td>&nbsp;</td>
-      </tr>
-      <tr >
-       <td align="right">开户城市：</td>
-            <td><select name="BankCity" id="s2" >
-                <option></option>
-              </select></td>
-            <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td align="right">详细开户地址：</td>
-        <td><input name="BankAddress" type="text" class="ipt" id="BankAddress" value="" /></td>
-        <td><div id="BankAddress1" class="info"><div id="10" class="focus_r" style="display:none;"><div class="msg_tip">请输入您的详细开户地址。</div></div></div></td>
-      </tr>
-       <script language = JavaScript>
-            var s=["s1","s2"];
-            var opt0 = ["请选择","请选择"];
-            function setup()
-            {
-                for(i=0;i<s.length-1;i++)
-                document.getElementById(s[i]).onchange=new Function("change("+(i+1)+")");
-                change(0);
-            }
-            setup();
-          </script>
-      <tr>
-        <td colspan="3" style="height:5px;"><hr></td>
-      </tr>
-      <tr>
-        <td align="right"><span class="zc_hong">*</span>身份证号：</td>
-        <td><input name="UserCode" type="text" class="ipt" id="UserCode" onFocus="notice('11','')"  onblur="notice('11','none')" onKeyUp="javascript:Null_Full(this.name)" value="" maxlength="18" /></td>
-        <td><div id="UserCode1" class="info"><div id="11" class="focus_r" style="display:none;"><div class="msg_tip">请输入您的身份证号。</div></div></div></td>
-      </tr>
-      <tr>
-        <td align="right"><span class="zc_hong">*</span>联系电话：</td>
-        <td><input name="UserTel" type="text" class="ipt"  id="UserTel" onFocus="notice('13','')"  onblur="notice('13','none')" onKeyUp="javascript:Null_Full(this.name)" value=""/></td>
-        <td><div id="UserTel1" class="info"><div id="13" class="focus_r" style="display:none;"><div class="msg_tip">请输入您的联系电话。</div></div></div></td>
-      </tr>
+<!--       <tr > -->
+<!--       <td align="right">开户省份：</td> -->
+<!--             <td><select name="BankProvince" id="s1" > -->
+<!--                 <option></option> -->
+<!--               </select></td> -->
+<!--             <td>&nbsp;</td> -->
+<!--       </tr> -->
+<!--       <tr > -->
+<!--        <td align="right">开户城市：</td> -->
+<!--             <td><select name="BankCity" id="s2" > -->
+<!--                 <option></option> -->
+<!--               </select></td> -->
+<!--             <td>&nbsp;</td> -->
+<!--       </tr> -->
+<!--       <tr> -->
+<!--         <td align="right">详细开户地址：</td> -->
+<!--         <td><input name="BankAddress" type="text" class="ipt" id="BankAddress" value="" /></td> -->
+<!--         <td><div id="BankAddress1" class="info"><div id="10" class="focus_r" style="display:none;"><div class="msg_tip">请输入您的详细开户地址。</div></div></div></td> -->
+<!--       </tr> -->
+<!--        <script language = JavaScript>
+//             var s=["s1","s2"];
+//             var opt0 = ["请选择","请选择"];
+//             function setup()
+//             {
+//                 for(i=0;i<s.length-1;i++)
+//                 document.getElementById(s[i]).onchange=new Function("change("+(i+1)+")");
+//                 change(0);
+//             }
+//             setup();
+           </script> -->
        <tr>
             <td align="right">申请级别：</td>
             <td colspan="2">
@@ -185,16 +184,16 @@ function ajaxagent(){
       </tr>
     <tr>
         <td align="right"><span class="zc_hong">*</span>单数：</td>
-        <td><input name="f4" type="text"  id="qq" class="ipt"  value="1" /></td>
+        <td><input name="f4" type="text"  id="f4" class="ipt"  value="1" /></td>
         
       </tr>
       <tr>
         <td align="right">&nbsp;</td>
         <td><span class="center">
-          <input name="submit1" id="Access" type="submit" class="button_text" value="注册" />
-&nbsp;&nbsp;
-<input name="重置" type="reset" class="button_text" value="重置" id="重置" />
-        </span></td>
+          	<input name="submit1" id="Access" type="submit" class="button_text" value="注册" />
+			&nbsp;&nbsp;
+			<input name="重置" type="reset" class="button_text" value="重置" id="重置" />
+        	</span></td>
         <td>&nbsp;</td>
       </tr>
     </table>
@@ -202,10 +201,6 @@ function ajaxagent(){
     </td>
   </tr>
 </table>
-
 </div>
-
-
-
 </body>
 </html>

@@ -1134,7 +1134,7 @@ class YouZiAction extends CommonAction
     public function adminMenber($GPid = 0)
     {
         // 列表过滤器，生成查询Map对象
-        if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
             $fck = M('fck');
             $UserID = $_REQUEST['UserID'];
             $ss_type = (int) $_REQUEST['type'];
@@ -1212,10 +1212,10 @@ class YouZiAction extends CommonAction
             $this->assign('title', $title);
             $this->display('adminMenber');
             return;
-        } else {
-            $this->error('数据错误!');
-            exit();
-        }
+//         } else {
+//             $this->error('数据错误!');
+//             exit();
+//         }
     }
     
     public function adminMenberXls($GPid = 0)
@@ -4584,7 +4584,7 @@ class YouZiAction extends CommonAction
     // 参数设置
     public function setParameter()
     {
-        if ($_SESSION['UrlPTPass'] == 'MyssPingGuoCP') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssPingGuoCP') {
             $fee = M('fee');
             $fee_rs = $fee->find();
             $fee_s1 = $fee_rs['s1'];
@@ -4697,10 +4697,10 @@ class YouZiAction extends CommonAction
             $this->assign('b_money', $b_money);
             
             $this->display('setParameter');
-        } else {
-            $this->error('错误!');
-            exit();
-        }
+//         } else {
+//             $this->error('错误!');
+//             exit();
+//         }
     }
 
     public function setParameterSave()
@@ -5253,7 +5253,7 @@ class YouZiAction extends CommonAction
 
     private function _delTable()
     {
-        if ($_SESSION['UrlPTPass'] == 'MyssQingKong') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssQingKong') {
             // 删除指定记录
             $model = M('fck');
             $model2 = M('bonus');
@@ -5400,11 +5400,11 @@ class YouZiAction extends CommonAction
             $bUrl = __URL__ . '/delTable';
             $this->_box(1, '清空完毕！', $bUrl, 1);
             exit();
-        } else {
-            $bUrl = __URL__ . '/delTable';
-            $this->_box(0, '清空数据失败！', $bUrl, 1);
-            exit();
-        }
+//         } else {
+//             $bUrl = __URL__ . '/delTable';
+//             $this->_box(0, '清空数据失败！', $bUrl, 1);
+//             exit();
+//         }
     }
 
     public function menber()
@@ -5456,7 +5456,7 @@ class YouZiAction extends CommonAction
     public function adminmoneyflows()
     {
         // 货币流向
-        if ($_SESSION['UrlPTPass'] == 'MyssMoneyFlows') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssMoneyFlows') {
             $fck = M('fck');
             $history = M('history');
             $sDate = $_REQUEST['S_Date'];
@@ -5552,10 +5552,10 @@ class YouZiAction extends CommonAction
             $this->assign('fee_s7', $fee_s7); // 输出奖项名称数组
             
             $this->display();
-        } else {
-            $this->error('数据错误!');
-            exit();
-        }
+//         } else {
+//             $this->error('数据错误!');
+//             exit();
+//         }
     }
     
     // 会员升级

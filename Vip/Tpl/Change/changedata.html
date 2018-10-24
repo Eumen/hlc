@@ -11,14 +11,11 @@
             <td width="25%"><input name="UserID2" type="text" id="UserID2" value="{$vo['re_name']}" style="background-color:#ddd;" readonly="readonly" class="ipt" /></td>
             <td width="50%">&nbsp;</td>
             </tr>
-        <empty name="User_namex">
-        <else/>
         <tr>
-        <td height="30" align="right">{$User_namex}：</td>
+        <td height="30" align="right">会员登录名：</td>
           <td><input name="UserID" type="text" id="UserID" value="{$vo['user_id']}" style="background-color:#ddd;" readonly="readonly" class="ipt"/></td>
           <td>&nbsp;</td>
         </tr>
-        </empty>
           <tr>
             <td height="30" colspan="3" style="height:5px;"><hr></td>
             </tr>
@@ -37,7 +34,7 @@
             <td>&nbsp;</td>
           </tr>
           <tr >
-            <td height="30" align="right"><span id="bank_id">账号</span>：</td>
+            <td height="30" align="right"><span id="bank_id">银行卡号</span>：</td>
             <td><input name="BankCard" type="text" id="BankCard" value="{$vo['bank_card']}" class="ipt" maxlength="19"/></td>
             <td></td>
             </tr>
@@ -46,21 +43,21 @@
             <td><input name="UserName" type="text" id="UserName" value="{$vo['user_name']}" style="background-color:#ddd;" class="ipt" readonly/></td>
             <td></td>
             </tr>
-          <tr>
-            <td height="30" align="right">开户省份：</td>
-            <td><input name="BankProvince" id="BankProvince" type="text" value="{$vo['bank_province']}" class="ipt" /></td>
-            <td></td>
-          </tr>
-          <tr >
-            <td height="30" align="right">开户城市：</td>
-            <td><input name="BankCity" id="BankCity" type="text" value="{$vo['bank_city']}" class="ipt" /></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td height="30" align="right">详细开户地址：</td>
-            <td><input name="BankAddress" type="text" id="BankAddress" value="{$vo['bank_address']}" class="ipt" /></td>
-            <td></td>
-            </tr>
+<!--           <tr> -->
+<!--             <td height="30" align="right">开户省份：</td> -->
+<!--             <td><input name="BankProvince" id="BankProvince" type="text" value="{$vo['bank_province']}" class="ipt" /></td> -->
+<!--             <td></td> -->
+<!--           </tr> -->
+<!--           <tr > -->
+<!--             <td height="30" align="right">开户城市：</td> -->
+<!--             <td><input name="BankCity" id="BankCity" type="text" value="{$vo['bank_city']}" class="ipt" /></td> -->
+<!--             <td></td> -->
+<!--           </tr> -->
+<!--           <tr> -->
+<!--             <td height="30" align="right">详细开户地址：</td> -->
+<!--             <td><input name="BankAddress" type="text" id="BankAddress" value="{$vo['bank_address']}" class="ipt" /></td> -->
+<!--             <td></td> -->
+<!--             </tr> -->
           <tr>
             <td height="30" colspan="3" style="height:5px;"><hr></td>
             </tr>
@@ -73,6 +70,11 @@
             <td height="30" align="right">联系电话：</td>
             <td><input name="UserTel" type="text" id="UserTel" value="{$vo['user_tel']}" class="ipt" onkeyup="javascript:Null_Full(this.name)" onfocus="notice('7','')"  onblur="notice('7','none')" /></td>
             <td><div id="UserTel1" class="info"><div id="7" class="focus_r" style="display:none;"><div class="msg_tip">请输入联系电话。</div></div></div></td>
+            </tr>
+            <tr>
+            <td height="30" align="right">微信：</td>
+            <td><input name="qq" type="text" id="qq" value="{$vo['qq']}" class="ipt" onkeyup="javascript:Null_Full(this.name)" onfocus="notice('8','')"  onblur="notice('8','none')" /></td>
+            <td><div id="qq1" class="info"><div id="8" class="focus_r" style="display:none;"><div class="msg_tip">请输入微信。</div></div></div></td>
             </tr>
           <tr>
             <td height="30" align="right">注册时间：</td>

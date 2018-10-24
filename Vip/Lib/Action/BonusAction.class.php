@@ -549,7 +549,7 @@ class BonusAction extends CommonAction{
 	//奖金查询
 	public function adminFinanceTable(){
 		$this->_Admin_checkUser();
-		if ($_SESSION['UrlPTPass'] == 'MyssPiPa'){
+// 		if ($_SESSION['UrlPTPass'] == 'MyssPiPa'){
 			$bonus = M ('bonus');  //奖金表
 			$fee   = M ('fee');    //参数表
 			$times = M ('times');  //结算时间表
@@ -636,10 +636,10 @@ class BonusAction extends CommonAction{
 			$this->assign('ind',7);  //数组索引 +1
 
 			$this->display('adminFinanceTable');
-		}else{
-			$this->error('错误');
-			exit;
-		}
+// 		}else{
+// 			$this->error('错误');
+// 			exit;
+// 		}
 	}
 	
 	//奖金明细

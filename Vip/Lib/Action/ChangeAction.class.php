@@ -80,7 +80,7 @@ class ChangeAction extends CommonAction {
 	
 	/* ---------------显示用户修改资料界面---------------- */
 	public function changedata(){
-		if ($_SESSION['DLTZURL02'] == 'changedata'){
+// 		if ($_SESSION['DLTZURL02'] == 'changedata'){
 			$fck	 =	 M('fck');
 			$id   = $_SESSION[C('USER_AUTH_KEY')];
 			//输出登录用户资料记录
@@ -114,10 +114,10 @@ class ChangeAction extends CommonAction {
 
 			$this->display('changedata');
 
-		}else{
-			$this->error('操作错误!');
-			exit;
-		}
+// 		}else{
+// 			$this->error('操作错误!');
+// 			exit;
+// 		}
 	}
 
 	/* --------------- 修改保存会员信息 ---------------- */
@@ -203,7 +203,7 @@ class ChangeAction extends CommonAction {
 	
 	/* ********************** 修改密码 ********************* */
 	public function changepassword(){
-		if ($_SESSION['DLTZURL01'] == 'changepassword'){
+// 		if ($_SESSION['DLTZURL01'] == 'changepassword'){
 			$fck = M('fck');
 
 			$id   = $_SESSION[C('USER_AUTH_KEY')];
@@ -215,10 +215,10 @@ class ChangeAction extends CommonAction {
 			unset($vo);
 
 			$this->display('changepassword');
-		}else{
-			$this->error('操作错误!');
-			exit;
-		}
+// 		}else{
+// 			$this->error('操作错误!');
+// 			exit;
+// 		}
 	}
 
 

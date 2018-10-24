@@ -381,10 +381,10 @@ class RegAction extends CommonAction{
 			$this->error('临时会员不能注册会员！');
 			exit;
 		}
-// 		if (strlen($_POST['UserID'])<1){
-// 			$this->error('会员编号不能少！');
-// 			exit;
-// 		}
+		if (strlen($_POST['UserID'])<1){
+			$this->error('会员编号不能少！');
+			exit;
+		}
 
 		$data = array();  //创建数据对象
 		//检测招商代表
@@ -536,7 +536,7 @@ class RegAction extends CommonAction{
             
         }
 		$sum=$F4*$ul;
-		$data['user_id']             = $new_userid;
+		$data['user_id']             = trim($_POST['UserID']);
 		$data['bind_account']        = '3333';
 		$data['last_login_ip']       = '';                            //最后登录IP
 		$data['verify']              = '0';
@@ -568,7 +568,7 @@ class RegAction extends CommonAction{
 		$data['user_code']           = $_POST['UserCode'];             //身份证号码
 		$data['user_address']        = $_POST['UserAddress'];          //联系地址
 		$data['email']               = $_POST['UserEmail'];            //电子邮箱
-		$data['qq']              	 = $_POST['qq'];            	   //qq
+		$data['qq']              	 = $_POST['qq'];            	   //微信
 		$data['user_tel']            = $_POST['UserTel'];              //联系电话
 		$data['s_province']            = $_POST['s_province'];
 		$data['s_city']            = $_POST['s_city'];
@@ -859,7 +859,7 @@ class RegAction extends CommonAction{
         
         }
 		$sum=$F4*$ul;
-		$data['user_id']             = $new_userid;
+		$data['user_id']             = trim($_POST['UserID']);
 		$data['bind_account']        = '3333';
 		$data['verify']              = '0';
 		$data['status']              = 1;                             //状态(?)
@@ -876,15 +876,15 @@ class RegAction extends CommonAction{
 		$data['bank_name']           = $_POST['BankName'];             //银行名称
 		$data['bank_card']           = $_POST['BankCard'];             //帐户卡号
 		$data['user_name']           = $_POST['UserName'];             //姓名
-		$data['nickname']			  = $_POST['nickname'];//$_POST['nickname'];  //昵称
-		$data['bank_province']       = $_POST['BankProvince'];  //省份
-		$data['bank_city']           = $_POST['BankCity'];      //城市
-		$data['bank_address']        = $_POST['BankAddress'];          //开户地址
+		$data['nickname']			  = '';//$_POST['nickname'];  //昵称
+		$data['bank_province']       = '';  //省份
+		$data['bank_city']           = '';      //城市
+		$data['bank_address']        = '';          //开户地址
 		//$data['user_post']           = $_POST['UserPost']; 		   //
 		$data['user_code']           = $_POST['UserCode'];             //身份证号码
 		$data['user_address']        = '';          //联系地址
 		$data['email']               = '';            //电子邮箱
-		$data['qq']              	 = '';            	   //qq
+		$data['qq']              	 = $_POST['qq'];            	   //微信
 		$data['user_tel']            = $_POST['UserTel'];              //联系电话
 
 		$data['is_pay']              = 0;                              //是否开通
@@ -908,7 +908,7 @@ class RegAction extends CommonAction{
 		$data1['bank_name']           = $_POST['BankName'];             //银行名称
 		$data1['bank_card']           = $_POST['BankCard'];             //帐户卡号
 		$data1['user_name']           = $_POST['UserName'];             //姓名
-		$data1['nickname']			  = $_POST['nickname'];//$_POST['nickname'];  //昵称
+		$data1['nickname']			  = '';//$_POST['nickname'];  //昵称
 		$data1['bank_province']       = $_POST['BankProvince'];  //省份
 		$data1['bank_city']           = $_POST['BankCity'];      //城市
 		$data1['bank_address']        = $_POST['BankAddress'];          //开户地址
@@ -922,7 +922,7 @@ class RegAction extends CommonAction{
 		unset($data,$data1,$fck,$relation);
 		if($result) {
 			echo "<script>";
-			echo "alert('恭喜您注册成功，您的账户编号：".$new_userid."，请及时开通正式会员！');";
+			echo "alert('恭喜您注册成功，您的账户编号：".trim($_POST['UserID'])."，请及时开通正式会员！');";
 			echo "window.location='".__APP__."/Public/login/';";
 			echo "</script>";
 			exit;

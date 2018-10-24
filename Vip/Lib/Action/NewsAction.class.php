@@ -71,7 +71,7 @@ class NewsAction extends CommonAction{
 	//新闻管理首页
 	public function adminnews(){
 		$this->_Admin_checkUser();//后台权限检测
-		if ($_SESSION['Urlszpass'] == 'Myssadminnews'){
+// 		if ($_SESSION['Urlszpass'] == 'Myssadminnews'){
 			$form = M ('form');
 			$title = trim($_REQUEST['title']);
 			if (!empty($title)){
@@ -99,10 +99,10 @@ class NewsAction extends CommonAction{
 	        $this->assign('list',$list);//数据输出到模板
 	        //=================================================
 			$this->display();
-		}else{
-			$this->error ('错误!');
-			exit;
-		}
+// 		}else{
+// 			$this->error ('错误!');
+// 			exit;
+// 		}
 	}
 
 	public function NewsAC(){

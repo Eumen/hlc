@@ -483,7 +483,7 @@ class AgentAction extends CommonAction
     public function agents1($Urlsz = 0)
     {
         // ======================================申请会员中心/服务中心/服务中心
-        if ($_SESSION['Urlszpass'] == 'MyssXiGu') {
+//         if ($_SESSION['Urlszpass'] == 'MyssXiGu') {
             $fee_rs = M('fee')->find();
             
             $fck = M('fck');
@@ -498,19 +498,6 @@ class AgentAction extends CommonAction
             $netb_rs = $netb ->where('uid = '.$_SESSION[C('USER_AUTH_KEY')])->field('*')->find();
             
             if ($fck_rs) {
-                // 会员级别
-                switch ($fck_rs['is_cc']) {
-                    case 0:
-                        $agent_status = '未申请现金卡!';
-                        break;
-                    case 1:
-                        $agent_status = '申请正在审核中!';
-                        break;
-                    case 2:
-                        $agent_status = '油卡已申请成功!';
-                        break;
-                }
-                
                 $this->assign('fee_s6', $fee_rs['i1']);
                 $this->assign('str9', $fee_rs['str9']);
                 $this->assign('agent_level', 0);
@@ -527,10 +514,10 @@ class AgentAction extends CommonAction
                 $this->error('操作失败!');
                 exit();
             }
-        } else {
-            $this->error('错误!');
-            exit();
-        }
+//         } else {
+//             $this->error('错误!');
+//             exit();
+//         }
     }
 
     public function agents2($Urlsz = 0)
@@ -891,7 +878,7 @@ class AgentAction extends CommonAction
     public function menber($Urlsz = 0)
     {
         // 列表过滤器，生成查询Map对象
-        if ($_SESSION['Urlszpass'] == 'MyssShuiPuTao') {
+//         if ($_SESSION['Urlszpass'] == 'MyssShuiPuTao') {
             $fck = M('fck');
             $map = array();
             $id = $_SESSION[C('USER_AUTH_KEY')];
@@ -956,10 +943,10 @@ class AgentAction extends CommonAction
             $this->assign('frs', $fck_rs); // 注册币
             $this->display('menber');
             exit();
-        } else {
-            $this->error('数据错误!');
-            exit();
-        }
+//         } else {
+//             $this->error('数据错误!');
+//             exit();
+//         }
     }
     
     // 原点升级审核列表
@@ -1042,7 +1029,7 @@ class AgentAction extends CommonAction
     public function menberok($Urlsz = 0)
     {
         // 列表过滤器，生成查询Map对象
-        if ($_SESSION['Urlszpass'] == 'Myssmenberok') {
+//         if ($_SESSION['Urlszpass'] == 'Myssmenberok') {
             $fck = M('fck');
             $map = array();
             $id = $_SESSION[C('USER_AUTH_KEY')];
@@ -1103,10 +1090,10 @@ class AgentAction extends CommonAction
             $this->assign('frs', $fck_rs); // 注册币
             $this->display('menberok');
             exit();
-        } else {
-            $this->error('数据错误!');
-            exit();
-        }
+//         } else {
+//             $this->error('数据错误!');
+//             exit();
+//         }
     }
 
     public function menberAC()
@@ -1463,7 +1450,7 @@ class AgentAction extends CommonAction
     private function _menberOpenUse($OpID = 0, $reg_money = 0)
     {
         // =============================================开通会员
-        if ($_SESSION['Urlszpass'] == 'MyssShuiPuTao') {
+//         if ($_SESSION['Urlszpass'] == 'MyssShuiPuTao') {
             
             $fck = D('Fck');
             $fee = M('fee');
@@ -1587,10 +1574,10 @@ class AgentAction extends CommonAction
                 $this->_box(0, '开通会员失败！', $bUrl, 1);
                 exit();
             }
-        } else {
-            $this->error('错误！');
-            exit();
-        }
+//         } else {
+//             $this->error('错误！');
+//             exit();
+//         }
     }
 
     private function _menberDelUse($OpID = 0)

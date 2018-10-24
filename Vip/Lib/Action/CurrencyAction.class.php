@@ -83,7 +83,7 @@ class CurrencyAction extends CommonAction {
 
 	//===================================================货币提现
 	public function frontCurrency($Urlsz=0){
-		if ($_SESSION['Urlszpass'] == 'MyssPaoYingTao'){
+// 		if ($_SESSION['Urlszpass'] == 'MyssPaoYingTao'){
 			$tiqu = M('tiqu');
 			$fck = M('fck');
 			$fee_rs = M ('fee')-> find(1);
@@ -117,15 +117,15 @@ class CurrencyAction extends CommonAction {
 			unset($tiqu,$fck,$where,$ID,$field,$rs);
 			$this->display ('frontCurrency');
 			return;
-		}else{
-			$this->error ('错误!');
-			exit;
-		}
+// 		}else{
+// 			$this->error ('错误!');
+// 			exit;
+// 		}
 	}
 
 	//=================================================提现提交
 	public function frontCurrencyConfirm(){
-		if ($_SESSION['Urlszpass'] == 'MyssPaoYingTao'){  //提现权限session认证
+// 		if ($_SESSION['Urlszpass'] == 'MyssPaoYingTao'){  //提现权限session认证
 			$ePoints = (int) trim($_POST['ePoints']);
 			$ttype = (int) trim($_POST['ttype']);
 			$type = (int) trim($_POST['type']);
@@ -334,15 +334,15 @@ class CurrencyAction extends CommonAction {
 				$this->error('货币提现失败！');
 				exit;
 			}
-		}else{
-			$this->error('错误！');
-			exit;
-		}
+// 		}else{
+// 			$this->error('错误！');
+// 			exit;
+// 		}
 	}
 	
 	//=============撤销提现
 	public function frontCurrencyDel(){
-	    if ($_SESSION['Urlszpass'] == 'MyssPaoYingTao'){
+// 	    if ($_SESSION['Urlszpass'] == 'MyssPaoYingTao'){
 			$tiqu = M ('tiqu');
 			$uid = $_SESSION[C('USER_AUTH_KEY')];
 			$id = (int) $_GET['id'];
@@ -368,16 +368,16 @@ class CurrencyAction extends CommonAction {
 	        	$this->error('没有该记录!');
                 exit;
 	        }
-	    }else{
-            $this->error('错误!');
-            exit;
-        }
+// 	    }else{
+//             $this->error('错误!');
+//             exit;
+//         }
 	}
 
 	//===============================================提现管理
 	public function adminCurrency(){
 		$this->_Admin_checkUser();//后台权限检测
-		if ($_SESSION['Urlszpass'] == 'MyssGuanPaoYingTao'){
+// 		if ($_SESSION['Urlszpass'] == 'MyssGuanPaoYingTao'){
 			$tiqu = M ('tiqu');
 			$fck = M('fck');
 			$fee_rs = M ('fee')->field('str11') -> find();
@@ -414,10 +414,10 @@ class CurrencyAction extends CommonAction {
 			$this->assign('alltiqumoney',$alltiqumoney);
 			//=================================================
 			$this->display('adminCurrency');
-		}else{
-			$this->error('错误!');
-			exit;
-		}
+// 		}else{
+// 			$this->error('错误!');
+// 			exit;
+// 		}
 	}
 	//处理提现
 	public function adminCurrencyAC(){
@@ -449,7 +449,7 @@ class CurrencyAction extends CommonAction {
 	//====================================================确认提现
 	private function _adminCurrencyConfirm($PTid){
 		$this->_Admin_checkUser();//后台权限检测
-		if ($_SESSION['Urlszpass'] == 'MyssGuanPaoYingTao'){
+// 		if ($_SESSION['Urlszpass'] == 'MyssGuanPaoYingTao'){
 			$tiqu = M ('tiqu');
 			$fck = D('fck');//
 // 			$history = M('history');
@@ -491,15 +491,15 @@ class CurrencyAction extends CommonAction {
 			unset($tiqu,$fck,$where,$rs,$history,$data,$nowdate,$fck_where);
 			$bUrl = __URL__.'/adminCurrency';
 			$this->_box(1,'确认提现！',$bUrl,1);
-		}else{
-			$this->error('错误!');
-			exit;
-		}
+// 		}else{
+// 			$this->error('错误!');
+// 			exit;
+// 		}
 	}
 	//删除提现
 	private function _adminCurrencyDel($PTid){
 		$this->_Admin_checkUser();//后台权限检测
-		if ($_SESSION['Urlszpass'] == 'MyssGuanPaoYingTao'){
+// 		if ($_SESSION['Urlszpass'] == 'MyssGuanPaoYingTao'){
 			$tiqu = M ('tiqu');
 			$where = array();
 //			$where['is_pay'] = 0;
@@ -528,15 +528,15 @@ class CurrencyAction extends CommonAction {
 				$this->_box(0,'删除失败！',$bUrl,1);
 				exit;
 			}
-		}else{
-			$this->error('错误!');
-			exit;
-		}
+// 		}else{
+// 			$this->error('错误!');
+// 			exit;
+// 		}
 	}
 //导出excel
 	public function DaoChu(){
 		$this->_Admin_checkUser();//后台权限检测
-		if ($_SESSION['Urlszpass'] == 'MyssGuanPaoYingTao'){
+// 		if ($_SESSION['Urlszpass'] == 'MyssGuanPaoYingTao'){
 			$title   =   "数据库名:test,   数据表:test,   备份日期:"   .   date("Y-m-d   H:i:s");
 			header("Content-Type:   application/vnd.ms-excel");
 			header("Content-Disposition:   attachment;   filename=Cash.xls");
@@ -579,15 +579,15 @@ class CurrencyAction extends CommonAction {
 			echo   '</tr>';
 			}
 			echo   '</table>';
-			}else{
-				$this->error('错误!');
-				exit;
-			}
+// 			}else{
+// 				$this->error('错误!');
+// 				exit;
+// 			}
 	}
 
 	public function DaoChu1(){
 		$this->_Admin_checkUser();//后台权限检测
-		if ($_SESSION['Urlszpass'] == 'MyssGuanPaoYingTao'){
+// 		if ($_SESSION['Urlszpass'] == 'MyssGuanPaoYingTao'){
 			$title   =   "数据库名:test,   数据表:test,   备份日期:"   .   date("Y-m-d   H:i:s");
 			header("Content-Type:   application/vnd.ms-excel");
 			header("Content-Disposition:   attachment;   filename=test.xls");
@@ -629,10 +629,10 @@ class CurrencyAction extends CommonAction {
 				echo   '</tr>';
 			}
 			echo   '</table>';
-		}else{
-			$this->error('错误!');
-			exit;
-		}
+// 		}else{
+// 			$this->error('错误!');
+// 			exit;
+// 		}
 	}
 
 
