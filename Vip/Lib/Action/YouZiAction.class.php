@@ -4705,7 +4705,7 @@ class YouZiAction extends CommonAction
 
     public function setParameterSave()
     {
-        if ($_SESSION['UrlPTPass'] == 'MyssPingGuoCP') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssPingGuoCP') {
             $fee = M('fee');
             $fck = M('fck');
             $rs = $fee->find();
@@ -4843,10 +4843,10 @@ class YouZiAction extends CommonAction
                 ->save();
             $this->success('参数设置！');
             exit();
-        } else {
-            $this->error('错误!'); // 12345678901112131417181920s3
-            exit();
-        }
+//         } else {
+//             $this->error('错误!'); // 12345678901112131417181920s3
+//             exit();
+//         }
     }
     
     // 参数设置

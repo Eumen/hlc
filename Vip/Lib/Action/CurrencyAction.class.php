@@ -146,11 +146,11 @@ class CurrencyAction extends CommonAction {
 				$this->error ('金额输入不正确!');
 				exit;
 			}
-//			$newWeek = date(w);
-//			if($newWeek!=0||$newWeek!=6){
-//				$this->error('只能星期六、星期日才能提现！');
-//				exit;
-//			}
+			$newWeek = date(w);
+			if($newWeek!=5){
+				$this->error('只能星期五才能提现！');
+				exit;
+			}
 			$where = array();
 			$ID = $_SESSION[C('USER_AUTH_KEY')];
 
@@ -467,21 +467,22 @@ class CurrencyAction extends CommonAction {
 				if ($rsss){
 					$result = $tiqu->execute("UPDATE __TABLE__ set `is_pay`=1 where `id`=".$rss['id']);
 					if($result){
-// 						//插入历史表
-// 						$data = array();
-// 						$data['uid']			= $rsss['id'];//提现会员ID
-// 						$data['user_id']		= $rsss['user_id'];
-// 						$data['action_type']	= 18;
-// 						$data['pdt']			= mktime();//提现时间
-// 						$data['epoints']		= $rss['money'];//进出金额
-// 						$data['allp']			= $rss['money_two'];
-// 						$data['bz']				= '18';//备注
-// 						$data['type']			= 2;//1 转帐  2 提现
-// 						$history->add($data);
-// 						unset($data);
 						//插入历史表
-						$fck->addencAdd($rsss['id'], $rsss['user_id'], $rss['money'], 18, 0, 0, 0, '18',
-						    $rsss['agent_use'],$rsss['agent_cash'],$rsss['agent_xf'],$rsss['agent_active']);
+						$data = array();
+						$data['uid']			= $rsss['id'];//提现会员ID
+						$data['user_id']		= $rsss['user_id'];
+						$data['action_type']	= 18;
+						$data['pdt']			= mktime();//提现时间
+						$data['epoints']		= $rss['money'];//进出金额
+						$data['allp']			= $rss['money_two'];
+						$data['bz']				= '18';//备注
+						$data['type']			= 2;//1 转帐  2 提现
+						$data['agent_use']		= $rss['agent_use'];
+						$data['agent_cash']		= $rss['agent_cash'];
+						$data['agent_xf']		= $rss['agent_xf'];
+						$data['agent_active']	= $rss['agent_active'];
+						$history->add($data);
+						unset($data);
 						$fck->execute("UPDATE __TABLE__ set shang_ach=shang_ach+".$rss['money']." where `id`=".$rss['uid']);
 					}
 				}else{
