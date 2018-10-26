@@ -40,15 +40,13 @@ if (mysqli_num_rows($history_result) < 1) {
             // 待更新到会员表金钱
             $fck_money = 0;
             // 检索分红包表数据
-            $jiadan_sql = "select * from xt_jiadan where user_id='{$value['user_id']}'";
+            $jiadan_sql = "select * from xt_jiadan where is_pay = 1 and user_id='{$value['user_id']}'";
             $jiadan_rs = mysqli_query($con,$jiadan_sql);
-            $jiadanMonth_sql = "select ftMonth from xt_jiadan where user_id='{$value['user_id']}' order by ftMonth desc limit 1";
-            $jiadanMonth_rs=mysqli_fetch_assoc(mysqli_query($con,$jiadanMonth_sql));
+            $jiadan_Contents = mysqli_fetch_all($jiadan_rs,MYSQLI_ASSOC);
+            // 释放结果集
+            mysqli_free_result($jiadan_rs);
             // 分红
-            if (!empty($jiadan_rs) && $jiadanMonth_rs['ftMonth'] > $value['month_tag']) {
-                $jiadan_Contents = mysqli_fetch_all($jiadan_rs,MYSQLI_ASSOC);
-                // 释放结果集
-                mysqli_free_result($jiadan_rs);
+            if (!empty($jiadan_rs) && $jiadan_Contents['ftMonth'] <= $value['month_tag']) {
                 // 循环取得分红包表数据
                 foreach ($jiadan_Contents as $k=>$v) {
                     $kk++;

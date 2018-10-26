@@ -113,7 +113,7 @@ class YouZiAction extends CommonAction
                 break;
             case 10:
                 $_SESSION['UrlPTPass'] = 'MyssGuanXiGua';
-                $bUrl = __URL__ . '/adminAgents'; // 代理商管理
+                $bUrl = __URL__ . '/adminAgents'; // 复投审核
                 $this->_boxx($bUrl);
                 break;
             case 11:
@@ -745,6 +745,143 @@ class YouZiAction extends CommonAction
         } else {
             $this->error('数据错误!');
             exit();
+        }
+    }
+    
+    // 复投审核
+    public function adminAgents($GPid = 0)
+    {
+        $jiadan = M('jiadan');
+        $UserID = $_POST['UserID'];
+        if (! empty($UserID)) {
+            import("@.ORG.KuoZhan"); // 导入扩展类
+            $KuoZhan = new KuoZhan();
+            if ($KuoZhan->is_utf8($UserID) == false) {
+                $UserID = iconv('GB2312', 'UTF-8', $UserID);
+            }
+            unset($KuoZhan);
+            $where['nickname'] = array(
+                'like',
+                "%" . $UserID . "%"
+            );
+            $where['user_id'] = array(
+                'like',
+                "%" . $UserID . "%"
+            );
+            $where['_logic'] = 'or';
+            $map['_complex'] = $where;
+            $UserID = urlencode($UserID);
+        }
+
+        $ID = $_SESSION[C('USER_AUTH_KEY')];
+
+        $map['action_type'] = array( 'eq',0);
+
+        // 查询字段
+        $field = '*';
+        // =====================分页开始==============================================
+        import("@.ORG.ZQPage"); // 导入分页类
+        $count = $jiadan->where($map)->count(); // 总页数
+        $listrows = C('ONE_PAGE_RE'); // 每页显示的记录数
+        $page_where = 'UserID=' . $UserID; // 分页条件
+        $Page = new ZQPage($count, $listrows, 1, 0, 3, $page_where);
+        // ===============(总页数,每页显示记录数,css样式 0-9)
+        $show = $Page->show(); // 分页变量
+        $this->assign('page', $show); // 分页变量输出到模板
+        $list = $jiadan->where($map)->field($field)->order('is_pay,id,adt desc')->page($Page->getPage() . ',' . $listrows)->select();
+
+        $HYJJ = '';
+        $this->_levelConfirm($HYJJ, 1);
+        $this->assign('voo', $HYJJ); // 会员级别
+        $this->assign('list', $list); // 数据输出到模板
+        // =================================================
+
+        $this->display('adminAgents');
+    }
+    public function adminAgentsAC()
+    {
+        // 处理提交按钮
+        $action = $_POST['action'];
+        // 获取复选框的值
+        $PTid = $_POST['tabledb'];
+        if (! isset($PTid) || empty($PTid)) {
+            $bUrl = __URL__ . '/adminAgents';
+            $this->_box(0, '请选择会员！', $bUrl, 1);
+            exit();
+        }
+        switch ($action) {
+            case '确认':
+                $this->_adminAgentsOpenUser($PTid);
+                break;
+            case '删除':
+                $this->_adminAgentsDelUser($PTid);
+                break;
+            default:
+                $bUrl = __URL__ . '/adminAgents';
+                $this->_box(0, '没有该会员！', $bUrl, 1);
+                break;
+        }
+    }
+    // 复投审核确认
+    private function _adminAgentsOpenUser($PTid = 0)
+    {
+        $fck = D('fck');
+        $jiadan = M('jiadan');
+        $history = M('history');
+        foreach ($PTid as $voo) {
+            $jiadan_rs = $jiadan->find($voo);
+            if ($jiadan_rs && $jiadan_rs['is_pay'] == 0) {
+                $result = $jiadan->query("update xt_jiadan set is_pay=1 where uid = ".$jiadan_rs['uid']." and action_type != 3 and ftMonth=" . $jiadan_rs['ftMonth']);
+                if ($jiadan_rs['action_type'] == 0) {
+                    // 3.推荐奖金
+                    $mrs = $fck->where('id=' . $mrs['uid'])->find();
+                    if ($mrs) {
+                    $data = array();
+                    $data['uid'] = $mrs['re_id'];
+                    $data['user_id'] = $mrs['re_name'];
+                    // 复投时间
+                    $data['adt'] = $jiadan_rs['adt'];
+                    // 出局时间
+                    $data['pdt'] = 0;
+                    // 已分红金额
+                    $data['money'] = 0;
+                    // 应分红金额
+                    $data['fhMoney'] = $jiadan_rs['fhMoney']*0.1;
+                    // 复投月份
+                    $data['ftMonth'] = $jiadan_rs['ftMonth'];
+                    // 分红天数
+                    $data['day'] = 0;
+                    $data['action_type'] = 3;
+                    $data['is_pay'] = 1;
+                    
+                    $result = $jiadan->add($data);
+                    }
+                }
+                $bUrl = __URL__ . '/adminAgents';
+                $this->_box(1, '复投审核成功！', $bUrl, 1);
+            } else {
+                $this->error('复投审核失败!');
+            }
+        }
+    }
+    
+    // 复投审核删除
+    private function _adminAgentsDelUser($PTid = 0)
+    {
+        $fck = D('fck');
+        $jiadan = M('jiadan');
+        foreach ($PTid as $voo) {
+            $jiadan_rs = $jiadan->find($voo);
+            if ($jiadan_rs && $jiadan_rs['is_pay'] == 0) {
+                $result = $jiadan->query("delete from xt_jiadan where uid = ".$jiadan_rs['uid']." and action_type != 3 and ftMonth=" . $jiadan_rs['ftMonth']);
+                if ($jiadan_rs['action_type'] == 0) {
+                    $result1 = $fck->query("update __TABLE__ set is_cc=is_cc-1". ",agent_use=agent_use+{$jiadan_rs['fhMoney']} where id=" . $jiadan_rs['uid']);
+                }
+                $bUrl = __URL__ . '/adminAgents';
+                $this->_box(1, '复投删除成功！', $bUrl, 1);
+            } else {
+                $this->error('复投删除失败!');
+            }
         }
     }
 

@@ -680,16 +680,11 @@ class AgentAction extends CommonAction
             exit();
         }
     }
-
+    // 复投
     public function agentsAC1()
     {
-        // ================================复投
-        $content = $_POST['content'];
-        $agentMax = $_POST['agentMax'];
-        $shoplx = (int) $_POST['shoplx'];
         // 复投类型
         $futou = $_POST['futou'];
-        $shop_b = $_POST['shop_b'];
         if ($futou == 1) {
             $this->error('请选择复投类型！');
             exit();
@@ -721,22 +716,14 @@ class AgentAction extends CommonAction
                 $this->error('消费积分不足！');
                 exit();
             }
-            
-            // 注册时投资金额
-            $agent_xf = $fck_rs['cpzj'];
-            $data = array();
             // 现在时间
             $nowdate = strtotime(date('c'));
-            // 历史记录表
-            $history = M('history');
             if ($futou == 2) {
-                $fck->addencAdd($fck_rs['id'], $fck_rs['user_id'], $tmpMoney, 25, 0, 0, 0, '25',$fck_rs['agent_use'] - $tmpMoney,$fck_rs['agent_cash'],$fck_rs['agent_xf'],$fck_rs['agent_active']);
                 // 更新会员表数据
-                $result = $fck->query("update __TABLE__ set is_cc=is_cc+1,jia_nums=jia_nums+1". ",agent_use=agent_use-$tmpMoney where id=" . $id);
+                $result = $fck->query("update __TABLE__ set is_cc=is_cc+1". ",agent_use=agent_use-$tmpMoney where id=" . $id);
             }
-            unset($history,$data);
             // 分红包记录表
-            // 0.复投
+            // 0.注册复投返还
             $fck->jiaDan($fck_rs['id'], $fck_rs['user_id'], $nowdate, 0, 0, $tmpMoney, 0, $fck_rs['month_tag'], 0);
             // 1.分红
             $fck->jiaDan($fck_rs['id'], $fck_rs['user_id'], $nowdate, 0, 0, $fck_rs['f4'] * 10000, 0, $fck_rs['month_tag'], 1);
@@ -744,10 +731,8 @@ class AgentAction extends CommonAction
                 // 2.补助
                 $fck->jiaDan($fck_rs['id'], $fck_rs['user_id'], $nowdate, 0, 0, 666, 0, $fck_rs['month_tag'], 2);
             }
-            // 3.推荐奖金
-            $fck->getusjj($fck_rs['id'],$tmpMoney * 0.1);
             $bUrl = __URL__ . '/agents1';
-            $this->_box(1, '复投成功！', $bUrl, 2);
+            $this->_box(1, '复投成功，请等待管理员审核！', $bUrl, 2);
         } else {
             $this->error('非法操作');
             exit();
@@ -1525,9 +1510,9 @@ class AgentAction extends CommonAction
                     $fck->addencAdd($rs['id'], $voo['user_id'], $money_b, 26, 0, 0, 0, $kt_cont); 
                     // 分红包记录表
                     // 0.注册
-                    $fck->jiaDan($voo['id'], $voo['user_id'], $nowdate, 0, 0, $voo['f4'] * 3000, 0, $voo['month_tag'], 0);
+                    $fck->jiaDan($voo['id'], $voo['user_id'], $nowdate, 0, 0, $voo['f4'] * 3000, 0, $voo['month_tag'], 0,1);
                     // 1.分红
-                    $fck->jiaDan($voo['id'], $voo['user_id'], $nowdate, 0, 0, $voo['f4'] * 10000, 0, $voo['month_tag'], 1);
+                    $fck->jiaDan($voo['id'], $voo['user_id'], $nowdate, 0, 0, $voo['f4'] * 10000, 0, $voo['month_tag'], 1,1);
                                                                                                
                     $data = array();
                     $data['is_pay'] = 1;
@@ -1585,6 +1570,7 @@ class AgentAction extends CommonAction
         // =========================================删除会员
         if ($_SESSION['Urlszpass'] == 'MyssShuiPuTao') {
             $fck = M('fck');
+            $jiadan = M('jiadan');
             $where['is_pay'] = 0;
             foreach ($OpID as $voo) {
                 $rs = $fck->find($voo);
@@ -1600,6 +1586,7 @@ class AgentAction extends CommonAction
                     } else {
                         $where['id'] = $voo;
                         $fck->where($where)->delete();
+                        $jiadan->where("uid = ".$voo)->delete();
                     }
                 } else {
                     $this->error('错误!');

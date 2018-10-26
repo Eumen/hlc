@@ -143,21 +143,29 @@ class FckModel extends CommonModel
      * @param 天数 $day
      * @param 复投月份 $ftMonth
      * @param action_type 0.注册复投，1.分红，2.补助，3.推荐奖金
+     * @param is_pay 0.未支付，1.已支付
      */
-    public function jiaDan($uid = 0, $user_id = 0, $adt = 0, $pdt = 0, $money = 0, $fhMoney = 0, $day = 0, $ftMonth = 0,$action_type = 0)
+    public function jiaDan($uid = 0, $user_id = 0, $adt = 0, $pdt = 0, $money = 0, $fhMoney = 0, $day = 0, $ftMonth = 0,$action_type = 0,$is_pay = 0)
     {
         $data = array();
         $jiadan = M('jiadan');
     
         $data['uid'] = $uid;
         $data['user_id'] = $user_id;
+        // 复投时间
         $data['adt'] = $adt;
+        // 出局时间
         $data['pdt'] = $pdt;
+        // 已分红金额
         $data['money'] = $money;
+        // 应分红金额
         $data['fhMoney'] = $fhMoney;
+        // 复投月份
         $data['ftMonth'] = $ftMonth;
+        // 分红天数
         $data['day'] = $day;
         $data['action_type'] = $action_type;
+        $data['is_pay'] = $is_pay;
         
         $result = $jiadan->add($data);
         unset($data, $jiadan);
@@ -271,15 +279,13 @@ class FckModel extends CommonModel
                 // 待更新到会员表金钱
                 $fck_money = 0;
                 // 检索分红包表数据
-                $jiadan_sql = "select * from xt_jiadan where user_id='{$value['user_id']}'";
+                $jiadan_sql = "select * from xt_jiadan where is_pay = 1 and user_id='{$value['user_id']}'";
                 $jiadan_rs = mysqli_query($con,$jiadan_sql);
-                $jiadanMonth_sql = "select ftMonth from xt_jiadan where user_id='{$value['user_id']}' order by ftMonth desc limit 1";
-                $jiadanMonth_rs=mysqli_fetch_assoc(mysqli_query($con,$jiadanMonth_sql));
+                $jiadan_Contents = mysqli_fetch_all($jiadan_rs,MYSQLI_ASSOC);
+                // 释放结果集
+                mysqli_free_result($jiadan_rs);
                 // 分红
-                if (!empty($jiadan_rs) && $jiadanMonth_rs['ftMonth'] > $value['month_tag']) {
-                    $jiadan_Contents = mysqli_fetch_all($jiadan_rs,MYSQLI_ASSOC);
-                    // 释放结果集
-                    mysqli_free_result($jiadan_rs);
+                if (!empty($jiadan_rs) && $jiadan_Contents['ftMonth'] <= $value['month_tag']) {
                     // 循环取得分红包表数据
                     foreach ($jiadan_Contents as $k=>$v) {
                         $kk++;
@@ -498,7 +504,7 @@ class FckModel extends CommonModel
 //             $this->baodanfei($mrs['shop_id'], $mrs['user_id'], $money, $mrs['is_agent']);
 //             $this->dsfenhong($mrs['p_path'], $mrs['user_id'], $money);
             $nowdate = strtotime(date('c'));
-            $this->jiaDan($mrs['re_id'], $mrs['re_name'], $nowdate, 0, 0, $money * 0.3, 0, $mrs['month_tag'], 3);
+            $this->jiaDan($mrs['re_id'], $mrs['re_name'], $nowdate, 0, 0, $money * 0.3, 0, $mrs['month_tag'], 3,1);
         }
         unset($mrs);
     }
