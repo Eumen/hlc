@@ -807,12 +807,8 @@ class RegAction extends CommonAction{
 		}
 		$usercc=trim($_POST['UserCode']);
 
-		if(strlen($_POST['Password']) < 1 or strlen($_POST['Password']) > 16 or strlen($_POST['PassOpen']) < 1 or strlen($_POST['PassOpen']) > 16){
+		if(strlen($_POST['Password']) < 1 or strlen($_POST['Password']) > 16){
 			$this->error('密码应该是1-16位！');
-			exit;
-		}
-		if($_POST['Password'] == $_POST['PassOpen']){  //二级密码
-			$this->error('一级密码与二级密码不能相同！');
 			exit;
 		}
 		$usercc=trim($_POST['UserCode']);

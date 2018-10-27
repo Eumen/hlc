@@ -4839,6 +4839,30 @@ class YouZiAction extends CommonAction
 //             exit();
 //         }
     }
+    
+    public function setPrice(){
+    	$price = M('price');
+    	$rs = $price ->order('id desc')->select();
+    	$this->assign("rs", $rs);
+    	$this->display('setPrice');
+    	unset($price, $rs);
+    }
+    
+    public function setPriceSave(){
+    	$p = $_POST['price'];
+    	
+    	$price = M('price');
+    	$data = array();
+    	$data['price'] = $p;
+    	$data['priceDate'] = date("Y-m-d H:i:s");
+    	$result = $price->add($data);
+    	if($result !==false ){
+    		$this->success("修改成功");
+    	}else{
+    		$this->error("修改失败");
+    	}
+    	unset($price);
+    }
 
     public function setParameterSave()
     {
@@ -4847,49 +4871,12 @@ class YouZiAction extends CommonAction
             $fck = M('fck');
             $rs = $fee->find();
             
-            // $s18 = (int) trim($_POST['s18']);
-            // $i1 = (int) trim($_POST['i1']);
-            // if(empty($s18) or empty($i1)){
-            // $this->error('请输入完整的参数，否则系统不能正常运行!');
-            // exit;
-            // }
-            //
-            // $arr = array(3,11,12,13,14,17,20);
-            // foreach($arr as $i){
-            // $i = 's'. $i;
-            // $str = $_POST[$i];
-            // foreach($str as $s){
-            // if($i != 's20'){ //s20为各网名称可以不为数字
-            // $s = trim($s);
-            // }
-            // if(empty($s)){
-            // $this->error('请输入完整的参数，否则系统不能正常运行 !');
-            // }}}
-            
             $i1 = $_POST['i1'];
             $i2 = $_POST['i2'];
             $i3 = $_POST['i3'];
             $i4 = $_POST['i4'];
             $a_money = $_POST['a_money'];
             $b_money = $_POST['b_money'];
-            // $s2 = $_POST['s2'];
-            // $s3 = $_POST['s3'];
-            // $s4 = $_POST['s4'];
-            // $s5 = $_POST['s5'];
-            // $s6 = $_POST['s6'];
-            // $s8 = $_POST['s8'];
-            // $s9 = $_POST['s9'];
-            // $s10 = $_POST['s10'];
-            // $s11 = $_POST['s11'];
-            // $s12 = $_POST['s12'];
-            // $s13 = $_POST['s13'];
-            // $s14 = $_POST['s14'];
-            // $s15 = $_POST['s15'];
-            // $s16 = $_POST['s16'];
-            // $s17 = $_POST['s17'];
-            // $s18 = $_POST['s18'];
-            // $s20 = $_POST['s20'];
-            //
             $where = array();
             $where['id'] = 1;
             $data = array();
@@ -4899,33 +4886,6 @@ class YouZiAction extends CommonAction
             if (empty($b_money) == false || strlen($b_money) > 0) {
                 $data['b_money'] = trim($b_money);
             }
-            // $data['s3'] = trim($s3[0]) .'|'. trim($s3[1]) .'|'. trim($s3[2]) .'|'. trim($s3[3]) .'|'. trim($s3[4]) .'|'. trim($s3[5]);
-            // $data['s5'] = trim($s5[0]) .'|'. trim($s5[1]) .'|'. trim($s5[2]) ;
-            // $data['s2'] = trim($s2);
-            // $data['s3'] = trim($s3);
-            // $data['s4'] = trim($s4);
-            // $data['s5'] = trim($s5);
-            // $data['s6'] = trim($s6);
-            // $data['s8'] = trim($s8);
-            // $data['s9'] = trim($s9);
-            // $data['s10'] = trim($s10);
-            // $data['s11'] = trim($s11);
-            // $data['s12'] = trim($s12);
-            // $data['s13'] = trim($s13);
-            // $data['s14'] = trim($s14);
-            // $data['s15'] = trim($s15);
-            // $data['s16'] = trim($s16);
-            // $data['s17'] = trim($s17);
-            // $data['s10'] = trim($s10[0]) .'|'. trim($s10[0]);
-            // $data['s11'] = trim($s11[0]) .'|'. trim($s11[1]) .'|'. trim($s11[2]) .'|'. trim($s11[3]) .'|'. trim($s11[4]) .'|'. trim($s11[5]);
-            // $data['s12'] = trim($s12[0]) .'|'. trim($s12[1]) .'|'. trim($s12[2]) .'|'. trim($s12[3]) .'|'. trim($s12[4]) .'|'. trim($s12[5]);
-            // $data['s13'] = trim($s13[0]) .'|'. trim($s13[1]) .'|'. trim($s13[2]);
-            // $data['s14'] = trim($s14[0]) .'|'. trim($s14[1]) .'|'. trim($s14[2]) .'|'. trim($s14[3]) .'|'. trim($s14[3]) .'|'. trim($s14[3]) .'|'. trim($s14[3]) .'|'. trim($s14[3]) .'|'. trim($s14[3]) .'|'. trim($s14[3]) .'|'. trim($s14[3]);
-            // $data['s15'] = trim($s15[0]) .'|'. trim($s15[0]);
-            // $data['s16'] = trim($s16[0]) .'|'. trim($s16[0]);
-            // $data['s17'] = trim($s17[0]) .'|'. trim($s17[1]);
-            // $data['s18'] = '0000|0000|'. trim($s18);
-            // $data['s20'] = trim($s20[0]) .'|'. trim($s20[1]) .'|'. trim($s20[2]) .'|'. trim($s20[3]) .'|'. trim($s20[4]) .'|'. trim($s20[5]);
             
             for ($j = 1; $j <= 10; $j ++) {
                 $arr_rs[$j] = $_POST['i' . $j];

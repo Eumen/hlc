@@ -15,7 +15,7 @@
 							<table width="100%" border="0" cellpadding="1" cellspacing="0" class="tab4">
 								<tr>
 									<td width="30%" align="right"><span class="zc_hong">*</span>
-										推荐人：</td>
+										推荐人Id：</td>
 									<td width="20%"><input name="RID" id="RID" type="text"
 										value="{$rs['user_id']}" class="ipt"
 										onKeyUp="guolv(this.name)"
@@ -50,25 +50,14 @@
 									<td colspan="2" style="height: 1px;"><hr></td>
 								</tr>
 								<tr>
-									<td align="right"><span class="zc_hong">*</span> 一级密码：</td>
+									<td align="right"><span class="zc_hong">*</span> 用户密码：</td>
 									<td><input name="Password" type="password" class="ipt"
 										id="Password" onblur="yhPass(this.name);" value="" /></td>
 								</tr>
 								<tr>
-									<td align="right"><span class="zc_hong">*</span> 确认一级密码：</td>
+									<td align="right"><span class="zc_hong">*</span> 确认密码：</td>
 									<td><input name="rePassword" type="password" class="ipt"
 										id="rePassword" onblur="yhrePass(this.name,'Password');"
-										value="" /></td>
-								</tr>
-								<tr>
-									<td align="right"><span class="zc_hong">*</span> 二级密码：</td>
-									<td><input name="PassOpen" type="password" class="ipt"
-										id="PassOpen" onblur="yhPass(this.name);" value="" /></td>
-								</tr>
-								<tr>
-									<td align="right"><span class="zc_hong">*</span> 确认二级密码：</td>
-									<td><input name="rePassOpen" type="password" class="ipt"
-										id="rePassOpen" onblur="yhrePass(this.name,'PassOpen');"
 										value="" /></td>
 								</tr>
 								<tr>
@@ -76,12 +65,9 @@
 								</tr>
 								<tr>
 									<td align="right"><span class="zc_hong">*</span> 开户银行：</td>
-									<td><select name="BankName"
-										onChange="javasctip:bank_us(this.value);">
-											<volist name='bank' id='voo'>
-											<option value="{$bank[$key]}">{$bank[$key]}</option>
-											</volist>
-									</select></td>
+									<td><input name="BankName" type="text" class="ipt"
+										id="UserTel" onKeyUp="javascript:Null_Full(this.name)"
+										value="" /></td>
 								</tr>
 								<tr>
 									<td align="right"><span class="zc_hong">*</span> <span

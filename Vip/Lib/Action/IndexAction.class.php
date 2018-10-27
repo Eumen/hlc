@@ -54,6 +54,11 @@ class IndexAction extends CommonAction {
 		if (empty($all_remoney)) {
 		    $all_remoney = 0.00;
 		}
+		// 货币价格
+		$price = M('price');
+		$rsP = $price->query("select price from xt_price where id = (select max(id) from xt_price)");
+		$this->assign('price', $rsP[0]['price']);
+		
 		$this->assign('all_remoney', $all_remoney);
 		// 出局分红包数
 		$where = Array();
