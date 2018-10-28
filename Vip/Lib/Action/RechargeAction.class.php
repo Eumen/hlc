@@ -385,7 +385,8 @@ public function aixinAC(){
 				$map['_string'] = 'pdt >= '.$sdata.' and pdt <= '.$enddatas;
 			}
 			
-			
+			// 只查询消费积分 2018-10-28
+			$map['stype'] = 1;
 	
 			$field  = '*';
 			//=====================分页开始==============================================
