@@ -70,7 +70,7 @@ function ajaxagent(){
       <tr>
         <td width="20%" align="right"><span class="zc_hong">*</span> 推荐人：</td>
         <td width="20%"><input name="RID" id="RID" type="text"  class="ipt" onKeyUp="guolv(this.name)" onFocus="notice('1','')" onBlur="javascript:yhServer(this.name,'1');notice('1','none')" /></td>
-        <td width="60%"><div id="RID1" class="info"><div id="1" class="focus_r" style="display:none;"><div class="msg_tip">请填写推荐人。</div></div></div> </td>
+        <td width="60%"><div id="RID1" class="info"><div id="1" class="focus_r" style="display:none;"><div class="msg_tip">请填写推荐人(默认100000)。</div></div></div> </td>
       </tr>
       <tr>
         <td align="right"><span class="zc_hong">*</span> 会员登录名：</td>
@@ -111,25 +111,13 @@ function ajaxagent(){
         <td><div id="rePassword1" class="info"><div id="5" class="focus_r" style="display:none;"><div class="msg_tip">确认一级密码。</div></div></div></td>
       </tr>
       <tr>
-        <td align="right"><span class="zc_hong">*</span> 二级密码：</td>
-        <td><input name="PassOpen" type="password" class="ipt"  id="PassOpen" onFocus="notice('6','')"  onblur="javascript:yhPass(this.name);notice('6','none')" value="2"/></td>
-        <td><div id="PassOpen1" class="info"><div id="6" class="focus_r" style="display:none;"><div class="msg_tip">请使用字母加数字或符号的组合密码。</div></div></div></td>
-      </tr>
-      <tr>
-        <td align="right"><span class="zc_hong">*</span> 确认二级密码：</td>
-        <td><input name="rePassOpen" type="password" class="ipt"  id="rePassOpen" onFocus="notice('7','')"  onblur="javascript:yhrePass(this.name,'PassOpen');notice('7','none')" value="2"/></td>
-        <td><div id="rePassOpen1" class="info"><div id="7" class="focus_r" style="display:none;"><div class="msg_tip">确认二级密码。</div></div></div></td>
-      </tr>
-      <tr>
         <td colspan="3" style="height:5px;"><hr></td>
       </tr>
       <tr>
         <td align="right"><span class="zc_hong">*</span> 开户银行：</td>
-        <td><select name="BankName" onChange="javasctip:bank_us(this.value);">
-          <volist name='bank' id='voo'>
-              <option value="{$bank[$key]}">{$bank[$key]}</option>
-          </volist>
-        </select></td>
+        <td><input name="BankName" type="text" class="ipt"
+										id="UserTel" onKeyUp="javascript:Null_Full(this.name)"
+										value="" /></td>
         <td>&nbsp;</td>
       </tr>
       <tr>

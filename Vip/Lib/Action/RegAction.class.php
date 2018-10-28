@@ -297,7 +297,7 @@ class RegAction extends CommonAction{
 		}		
 		$this->assign('UserCode',$_POST['UserCode']);
 
-		if(strlen($_POST['Password']) < 1 or strlen($_POST['Password']) > 16 or strlen($_POST['PassOpen']) < 1 or strlen($_POST['PassOpen']) > 16){
+		if(strlen($_POST['Password']) < 1 or strlen($_POST['Password']) > 16){
 			$this->error('密码应该是1-16位！');
 			exit;
 		}
@@ -478,7 +478,7 @@ class RegAction extends CommonAction{
 			$this->error('手机号码格式不正确！');
 			exit;
 		}	
-		if(strlen($_POST['Password']) < 1 or strlen($_POST['Password']) > 16 or strlen($_POST['PassOpen']) < 1 or strlen($_POST['PassOpen']) > 16){
+		if(strlen($_POST['Password']) < 1 or strlen($_POST['Password']) > 16){
 			$this->error('密码应该是1-16位！');
 			exit;
 		}
