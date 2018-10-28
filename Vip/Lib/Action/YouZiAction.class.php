@@ -1231,7 +1231,7 @@ class YouZiAction extends CommonAction
     private function _auditMenberDelUser($PTid = 0)
     {
         // 删除会员
-        if ($_SESSION['UrlPTPass'] == 'MyssShenShuiPuTao') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssShenShuiPuTao') {
             $fck = M('fck');
             $ispay = M('ispay');
             $where['is_pay'] = 0;
@@ -1266,9 +1266,9 @@ class YouZiAction extends CommonAction
             // $this->_box(0,'删除会员！',$bUrl,1);
             // exit;
             // }
-        } else {
-            $this->error('错误!');
-        }
+//         } else {
+//             $this->error('错误!');
+//         }
     }
 
     public function adminMenber($GPid = 0)
@@ -2259,13 +2259,14 @@ class YouZiAction extends CommonAction
 
     private function adminMenberDel($PTid = 0)
     {
-        if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
             $fck = M('fck');
             $times = M('times');
             $bonus = M('bonus');
             $history = M('history');
             $chongzhi = M('chongzhi');
             $gouwu = M('gouwu');
+            $jiadan = M('jiadan');
             $tiqu = M('tiqu');
             $zhuanj = M('zhuanj');
             
@@ -2299,14 +2300,15 @@ class YouZiAction extends CommonAction
                     $tiqu->where($map)->delete();
                     $zhuanj->where($map)->delete();
                     $gouwu->where($map)->delete();
+                    $jiadan->where($map)->delete();
                     $fck->where($where)->delete();
                     $bUrl = __URL__ . '/adminMenber';
-                    $this->_box(1, '删除会员！', $bUrl, 1);
+                    $this->_box(1, '删除会员成功！', $bUrl, 1);
                 }
             }
-        } else {
-            $this->error('错误!');
-        }
+//         } else {
+//             $this->error('错误!');
+//         }
     }
     
     // 修复推荐路径
@@ -2454,7 +2456,7 @@ class YouZiAction extends CommonAction
     // 开启分红
     private function _isDayActiveOpen($PTid = 0)
     {
-        if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
             $fck = M('fck');
             $where['id'] = array('in',$PTid);
             $where['is_day_active'] = array('gt',0);
@@ -2468,16 +2470,16 @@ class YouZiAction extends CommonAction
                 $this->_box(0, '开启分红失败！', $bUrl, 1);
                 exit();
             }
-        } else {
-            $this->error('错误！');
-            exit();
-        }
+//         } else {
+//             $this->error('错误！');
+//             exit();
+//         }
     }
     // 关闭分红
     private function _isDayActiveLock($PTid = 0)
     {
         // 锁定会员
-        if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
             $fck = M('fck');
             $where['is_day_active'] = array( 'eq',0);
             $where['id'] = array('in',$PTid);
@@ -2492,9 +2494,9 @@ class YouZiAction extends CommonAction
                 $this->_box(0, '关闭分红失败！', $bUrl, 1);
                 exit();
             }
-        } else {
-            $this->error('错误!');
-        }
+//         } else {
+//             $this->error('错误!');
+//         }
     }
     
     // 转账管理员设置
@@ -2666,7 +2668,7 @@ class YouZiAction extends CommonAction
     private function _openAgentUse($PTid = 0)
     {
         // 设置服务中心管理员
-        if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
             $fck = M('fck');
             $where['id'] = array('in',$PTid);
             $varray = array(
@@ -2683,16 +2685,16 @@ class YouZiAction extends CommonAction
                 $this->_box(0, '现金积分开启失败！', $bUrl, 1);
                 exit();
             }
-        } else {
-            $this->error('错误!');
-        }
+//         } else {
+//             $this->error('错误!');
+//         }
     }
     
     // 锁定现金积分
     private function _cancelAgentUse($PTid = 0)
     {
         // 解除服务中心管理员
-        if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
             $fck = M('fck');
             $where['id'] = array('in',$PTid);
             $varray = array(
@@ -2709,15 +2711,15 @@ class YouZiAction extends CommonAction
                 $this->_box(0, '现金积分锁定失败！', $bUrl, 1);
                 exit();
             }
-        } else {
-            $this->error('错误!');
-        }
+//         } else {
+//             $this->error('错误!');
+//         }
     }
     
     // 开启会员
     private function _adminMenberOpen($PTid = 0)
     {
-        if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
             $fck = M('fck');
             $where['id'] = array(
                 'in',
@@ -2734,16 +2736,16 @@ class YouZiAction extends CommonAction
                 $this->_box(0, '开启会员！', $bUrl, 1);
                 exit();
             }
-        } else {
-            $this->error('错误！');
-            exit();
-        }
+//         } else {
+//             $this->error('错误！');
+//             exit();
+//         }
     }
 
     private function _adminMenberLock($PTid = 0)
     {
         // 锁定会员
-        if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
             $fck = M('fck');
             $where['is_pay'] = array(
                 'egt',
@@ -2764,9 +2766,9 @@ class YouZiAction extends CommonAction
                 $this->_box(0, '锁定会员！', $bUrl, 1);
                 exit();
             }
-        } else {
-            $this->error('错误!');
-        }
+//         } else {
+//             $this->error('错误!');
+//         }
     }
     
     // 设为报单中心
@@ -2851,7 +2853,7 @@ class YouZiAction extends CommonAction
     // 开启分红奖
     private function _OpenFh($PTid = 0)
     {
-        if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
             $fck = M('fck');
             $nowday = strtotime(date('Y-m-d'));
             $where['is_lockfh'] = array(
@@ -2877,14 +2879,14 @@ class YouZiAction extends CommonAction
                 $this->_box(0, '开启分红奖失败！', $bUrl, 1);
                 exit();
             }
-        } else {
-            $this->error('错误!');
-        }
+//         } else {
+//             $this->error('错误!');
+//         }
     }
     // 关闭分红奖
     private function _LockFh($PTid = 0)
     {
-        if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
             $fck = M('fck');
             $where['is_lockfh'] = array(
                 'egt',
@@ -2906,9 +2908,9 @@ class YouZiAction extends CommonAction
                 $this->_box(0, '关闭分红奖失败！', $bUrl, 1);
                 exit();
             }
-        } else {
-            $this->error('错误!');
-        }
+//         } else {
+//             $this->error('错误!');
+//         }
     }
 
     public function adminMenberUP()

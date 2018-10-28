@@ -18,8 +18,8 @@
          <th><span>复投次数</span></th>
         <th><span>提现总额</span></th>
         <th><span>会员状态</span></th>
-<!--         <th><span>是否开启分红</span></th> -->
-<!--         <th><span>是否锁定现金积分</span></th> -->
+        <th><span>是否开启分红</span></th>
+        <th><span>是否锁定现金积分</span></th>
         </tr>
     </thead>
     <volist name="list" id="vo">
@@ -34,8 +34,8 @@
         <td>{$vo['is_cc']}</td>
         <td>{$vo['shang_ach']}</td>
         <td><eq name="vo['is_lock']" value='0'><span style="color: #FF0000;">未锁定</span><else />已锁定</eq><eq name="vo['is_pay']" value='2'>[空单]</eq></td>
-<!--         <td><eq name="vo['is_day_active']" value='0'><span style="color: #FF0000;">已开启</span><else />已关闭</eq></td> -->
-<!--         <td><eq name="vo['is_lock_use']" value='0'><span style="color: #FF0000;">已开启</span><else />已锁定</eq></td> -->
+        <td><eq name="vo['is_day_active']" value='0'><span style="color: #FF0000;">已开启</span><else />已关闭</eq></td>
+        <td><eq name="vo['is_lock_use']" value='0'><span style="color: #FF0000;">已开启</span><else />已锁定</eq></td>
         </tr>
     </volist>
 
