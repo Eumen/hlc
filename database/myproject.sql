@@ -5208,3 +5208,17 @@ CREATE TABLE `xt_zhuanj` (
 -- ----------------------------
 -- Records of xt_zhuanj
 -- ----------------------------
+DROP TABLE IF EXISTS `xt_price`;
+CREATE TABLE `xt_price` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `price` decimal(10,2) DEFAULT NULL COMMENT '汉语币价格',
+  `priceDate` varchar(255) CHARACTER SET utf8 DEFAULT NULL COMMENT '日期',
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+#
+# Data for table "xt_price"
+#
+
+INSERT INTO `xt_price` VALUES (1,2.00,'2018-10-27 21:14:16');
+
