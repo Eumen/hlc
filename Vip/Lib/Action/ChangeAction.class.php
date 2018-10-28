@@ -127,7 +127,7 @@ class ChangeAction extends CommonAction {
 			exit;
 		}
 
-		if ($_SESSION['DLTZURL02'] == 'changedata'){
+// 		if ($_SESSION['DLTZURL02'] == 'changedata'){
 			$fck = M('fck');
 
 			$myw = array();
@@ -195,10 +195,11 @@ class ChangeAction extends CommonAction {
 				$this->error('操作错误!');
 				exit;
 			}
-		}else{
-			$this->error('操作错误!');
-			exit;
-		}
+// 		}
+// 		else{
+// 			$this->error('操作错误!');
+// 			exit;
+// 		}
 	}
 	
 	/* ********************** 修改密码 ********************* */

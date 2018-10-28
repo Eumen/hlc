@@ -21,16 +21,19 @@
             </tr>
           <tr >
             <td height="30" align="right">开户银行：</td>
-        <td><select name="BankName" id="BankName">
-                  <volist name='bank' id='voo'>
-                     <eq name='bank[$key]' value="$b_bank['bank_name']">
-                       <option value="{$bank[$key]}" selected="selected">{$bank[$key]}</option>
-                     <else />
-                       <option value="{$bank[$key]}">{$bank[$key]}</option>
-                     </eq>
-                  </volist>
-                </select>
-            </td>
+<!--         <td><select name="BankName" id="BankName"> -->
+<!--                   <volist name='bank' id='voo'> -->
+<!--                      <eq name='bank[$key]' value="$b_bank['bank_name']"> -->
+<!--                        <option value="{$bank[$key]}" selected="selected">{$bank[$key]}</option> -->
+<!--                      <else /> -->
+<!--                        <option value="{$bank[$key]}">{$bank[$key]}</option> -->
+<!--                      </eq> -->
+<!--                   </volist> -->
+<!--                 </select> -->
+<!--             </td> -->
+<td><input name="BankName" type="text" class="ipt"
+										id="UserTel" onKeyUp="javascript:Null_Full(this.name)"
+										value="{$b_bank['bank_name']}" /></td>
             <td>&nbsp;</td>
           </tr>
           <tr >
