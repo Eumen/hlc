@@ -706,10 +706,6 @@ class AgentAction extends CommonAction
         $ftMonth = $jiadan->where('uid ='.$id)->max('ftMonth');
         // 若存在会员表数据
         if ($fck_rs) {
-            if ($fck_rs['month_tag'] <= $ftMonth) {
-                $this->error('当月已经复投完毕，请下个月再复投！');
-                exit();
-            }
             // 复投金额：注册金额的30%
             $tmpMoney = $fck_rs['cpzj'] * 0.3;
             if ($fck_rs['agent_use'] < $tmpMoney && $futou == 2) {

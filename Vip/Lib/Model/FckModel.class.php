@@ -476,14 +476,23 @@ class FckModel extends CommonModel
                 // 释放结果集
                 mysqli_free_result($jiadanDay_rs);
                 // 月份标志
-                $month_tag = floor(bcdiv($jiadanDay_Contents['day'], 30,2));
-                $fck_updateSql5 = "update xt_fck set month_tag={$month_tag} where id=" . $myid;
+                $month_tag = ceil(bcdiv($jiadanDay_Contents['day'], 30,2));
+                if ($month_tag == null || $month_tag == 0) {
+                    $month_tag = 1;
+                }
+                $jiadanMonth_sql = "select ftMonth from xt_jiadan where user_id='{$value['user_id']}' order by ftMonth desc limit 1";
+                $jiadanMonth_rs = mysqli_query($con,$jiadanMonth_sql);
+                $jiadanMonth_Contents = mysqli_fetch_assoc($jiadanMonth_rs);
+                if ($jiadanMonth_Contents['ftMonth'] < $month_tag) {
+                    $fck_updateSql5 = "update xt_fck set month_tag={$month_tag},is_day_active = 1 where id=" . $myid;
+                } else {
+                    $fck_updateSql5 = "update xt_fck set month_tag={$month_tag} where id=" . $myid;
+                }
+                
                 mysqli_query($con,$fck_updateSql5);
         
                 unset($jiadan_rs,$jiadan_Contents,$jd_danshu,$jd_money,$jd_oldMoney,$jd_sumMoney,$jd_updateSql,$money,$myid,$inUserID);
             }
-            $fee_updateSql = "update xt_fee set i3=0";
-            mysqli_query($con,$fee_updateSql);
         }
 
     }

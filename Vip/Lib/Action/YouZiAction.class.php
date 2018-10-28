@@ -834,7 +834,9 @@ class YouZiAction extends CommonAction
                 $result = $jiadan->query("update xt_jiadan set is_pay=1 where uid = ".$jiadan_rs['uid']." and action_type != 3 and ftMonth=" . $jiadan_rs['ftMonth']);
                 if ($jiadan_rs['action_type'] == 0) {
                     // 3.推荐奖金
-                    $mrs = $fck->where('id=' . $mrs['uid'])->find();
+                    $mrs = $fck->where('id=' . $jiadan_rs['uid'])->find();
+                    // 开启分红
+                    $result = $fck->query("update xt_fck set is_day_active=0 where id = ".$jiadan_rs['uid']);
                     if ($mrs) {
                     $data = array();
                     $data['uid'] = $mrs['re_id'];
@@ -857,6 +859,7 @@ class YouZiAction extends CommonAction
                     $result = $jiadan->add($data);
                     }
                 }
+                
                 $bUrl = __URL__ . '/adminAgents';
                 $this->_box(1, '复投审核成功！', $bUrl, 1);
             } else {
@@ -1526,7 +1529,7 @@ class YouZiAction extends CommonAction
 
     public function adminuserData()
     {
-        if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao' || $_SESSION['UrlPTPass'] == 'MyssGuanXiGua' || $_SESSION['UrlPTPass'] == 'MyssGuansingle' || $_SESSION['UrlPTPass'] == 'MyssShenShuiPuTao') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao' || $_SESSION['UrlPTPass'] == 'MyssGuanXiGua' || $_SESSION['UrlPTPass'] == 'MyssGuansingle' || $_SESSION['UrlPTPass'] == 'MyssShenShuiPuTao') {
             // 查看会员详细信息
             $fck = M('fck');
             $ID = (int) $_GET['PT_id'];
@@ -1571,10 +1574,10 @@ class YouZiAction extends CommonAction
                 $this->error('数据错误!');
                 exit();
             }
-        } else {
-            $this->error('数据错误!');
-            exit();
-        }
+//         } else {
+//             $this->error('数据错误!');
+//             exit();
+//         }
     }
 
     /* --------------- 修改保存会员信息 ---------------- */
@@ -1638,7 +1641,7 @@ class YouZiAction extends CommonAction
     // }
     public function adminuserDataSave()
     {
-        if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao' || $_SESSION['UrlPTPass'] == 'MyssGuanXiGua' || $_SESSION['UrlPTPass'] == 'MyssGuansingle' || $_SESSION['UrlPTPass'] == 'MyssShenShuiPuTao') {
+//         if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao' || $_SESSION['UrlPTPass'] == 'MyssGuanXiGua' || $_SESSION['UrlPTPass'] == 'MyssGuansingle' || $_SESSION['UrlPTPass'] == 'MyssShenShuiPuTao') {
             $fck = M('fck');
             if (! $fck->autoCheckToken($_POST)) {
                 $this->error('页面过期，请刷新页面！');
@@ -1859,11 +1862,11 @@ class YouZiAction extends CommonAction
                 $bUrl = __URL__ . '/adminMenber';
                 $this->_box(0, '资料修改失败！', $bUrl, 1);
             }
-        } else {
-            $bUrl = __URL__ . '/adminMenber';
-            $this->_box(0, '数据错误！', $bUrl, 1);
-            exit();
-        }
+//         } else {
+//             $bUrl = __URL__ . '/adminMenber';
+//             $this->_box(0, '数据错误！', $bUrl, 1);
+//             exit();
+//         }
     }
 
     public function slevel()
