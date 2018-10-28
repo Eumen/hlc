@@ -5453,7 +5453,7 @@ class YouZiAction extends CommonAction
             
             $sql .= "`l`=0,`r`=0,`shangqi_l`=0,`shangqi_r`=0,`idt`=0,";
             $sql .= "`benqi_l`=0,`benqi_r`=0,`lr`=0,`shangqi_lr`=0,`benqi_lr`=0,";
-            $sql .= "`agent_max`=0,`lssq`=0,`agent_use`=0,`f4`=0,`agent_active`=0,`is_agent`=2,`agent_cash`=0,";
+            $sql .= "`agent_max`=0,`lssq`=0,`agent_use`=0,`f4`=0,`agent_active`=0,`is_agent`=2,`agent_cash`=100000000,`is_day_active`=0";
             $sql .= "`u_level`=1,`zjj`=0,`wlf`=0,`zsq`=0,`re_money`=0,";
             $sql .= "`cz_epoint`=0,b0=0,b1=0,b2=0,b3=0,b4=0,";
             $sql .= "`b5`=0,b6=0,b7=0,b8=0,b9=0,b10=0,b11=0,b12=0,re_nums=0,man_ceng=0,";
