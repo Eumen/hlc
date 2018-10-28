@@ -238,7 +238,7 @@ if (mysqli_num_rows($history_result) < 1) {
             // 释放结果集
             mysqli_free_result($jiadanDay_rs);
             // 月份标志
-            $month_tag = ceil(bcdiv($jiadanDay_Contents['day'], 30,2));
+            $month_tag = ceil(bcdiv(($jiadanDay_Contents['day'] + 1), 30,2));
             if ($month_tag == null || $month_tag == 0) {
                 $month_tag = 1;
             }
