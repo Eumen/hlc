@@ -269,10 +269,10 @@ class RegAction extends CommonAction{
 		if(empty($huhu)){
 			$errmsg.="<li>请填写开户姓名！</li>";
 		}
-		if(!preg_match('/^[\x7f-\xff]+$/', $huhu)){
-		    $this->error('开户姓名必须是中文！');
-		    exit;
-		}
+// 		if(!preg_match('/^[\x7f-\xff]+$/', $huhu)){
+// 		    $this->error('开户姓名必须是中文！');
+// 		    exit;
+// 		}
 		$this->assign('UserName',$_POST['UserName']);
 		$this->assign('UserName',$_POST['UserName']);
 		if(empty($_POST['UserCode'])){
@@ -792,10 +792,10 @@ class RegAction extends CommonAction{
 		if(empty($huhu)){
 			$errmsg.="<li>请填写开户姓名！</li>";
 		}
-		if(!preg_match('/^[\x7f-\xff]+$/', $huhu)){
-		    $this->error('开户姓名必须是中文！');
-		    exit;
-		}
+// 		if(!preg_match('/^[\x7f-\xff]+$/', $huhu)){
+// 		    $this->error('开户姓名必须是中文！');
+// 		    exit;
+// 		}
 		if(empty($_POST['UserCode'])){
 			$errmsg.="<li>请填写身份证号码！</li>";
 		}
