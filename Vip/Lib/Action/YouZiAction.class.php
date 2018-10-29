@@ -5399,6 +5399,7 @@ class YouZiAction extends CommonAction
             $model37 = M('jiadanb');
             $model38 = M('aorb');
             $model39 = M('relation');
+            $model42 = M('price');
             
             $model->where("id > 1")->delete();
             $model2->where('id > 0')->delete();
@@ -5440,6 +5441,7 @@ class YouZiAction extends CommonAction
             $model39->where('id > 0')->delete();
             $model40->where('id > 0')->delete();
             $model41->where('id > 0')->delete();
+            $model42->where('id > 0')->delete();
             
             $nowdate = time();
             // 数据清0
@@ -5487,6 +5489,8 @@ class YouZiAction extends CommonAction
             $data['create_time'] = time();
             $data['f_time'] = $weekday;
             $data['us_num'] = 1;
+            // 提现手续费清零
+            $data['s16'] = 0;
             // $data['a_money'] = 0;
             // $data['b_money'] = 0;
             $data['ff_num'] = 1;

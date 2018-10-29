@@ -182,7 +182,7 @@ public function aixinAC(){
 
 	//==========================货币充值
 	public function currencyRecharge(){
-		if ($_SESSION['Urlszpass'] == 'MyssMangGuo'){
+// 		if ($_SESSION['Urlszpass'] == 'MyssMangGuo'){
 			$chongzhi = M('chongzhi');
 			$fck = M('fck');
 			$map['uid'] = $_SESSION[C('USER_AUTH_KEY')];
@@ -227,13 +227,13 @@ public function aixinAC(){
 			$this -> assign('str11',$fee_rs['str11']);
 			$this->display ('currencyRecharge');
 			return;
-		}else{
-			$this->error ('错误!');
-			exit;
-		}
+// 		}else{
+// 			$this->error ('错误!');
+// 			exit;
+// 		}
 	}
 	public function currencyRechargeAC(){
-		if ($_SESSION['Urlszpass'] == 'MyssMangGuo'){
+// 		if ($_SESSION['Urlszpass'] == 'MyssMangGuo'){
 			$fck = M ('fck');
 			$ID = $_SESSION[C('USER_AUTH_KEY')];
 			$rs = $fck -> field('is_pay,user_id') -> find($ID);
@@ -295,34 +295,34 @@ public function aixinAC(){
 //				$this->error('请输入数字或金额不能为空!');
 //				exit;
 //			}
-			if (empty($_num)){
-				$this->error('账号不能为空!');
-				exit;
-			}
-			if (empty($_year) || !is_numeric($_year)){
-				$this->error('请输入数字或年不能为空!');
-				exit;
-			}
-			if (empty($_month) || !is_numeric($_month)){
-				$this->error('请输入数字或月不能为空!');
-				exit;
-			}
-			if (empty($_date) || !is_numeric($_date)){
-				$this->error('请输入数字或日不能为空!');
-				exit;
-			}
-			if (empty($_hour) || !is_numeric($_hour)){
-				$this->error('请输入数字或小时不能为空!');
-				exit;
-			}
-			if (empty($_minute) || !is_numeric($_minute) || $_minute>60){
-				$this->error('请输入数字或分钟不能为空或者输入数字错误!');
-				exit;
-			}
+// 			if (empty($_num)){
+// 				$this->error('账号不能为空!');
+// 				exit;
+// 			}
+// 			if (empty($_year) || !is_numeric($_year)){
+// 				$this->error('请输入数字或年不能为空!');
+// 				exit;
+// 			}
+// 			if (empty($_month) || !is_numeric($_month)){
+// 				$this->error('请输入数字或月不能为空!');
+// 				exit;
+// 			}
+// 			if (empty($_date) || !is_numeric($_date)){
+// 				$this->error('请输入数字或日不能为空!');
+// 				exit;
+// 			}
+// 			if (empty($_hour) || !is_numeric($_hour)){
+// 				$this->error('请输入数字或小时不能为空!');
+// 				exit;
+// 			}
+// 			if (empty($_minute) || !is_numeric($_minute) || $_minute>60){
+// 				$this->error('请输入数字或分钟不能为空或者输入数字错误!');
+// 				exit;
+// 			}
 	
 	
-			//$nowdate = strtotime(date('c'));
-			$nowdate = strtotime(date($_year.'-'. $_month.'-'.$_date.' '. $_hour.':'.$_minute.':00'));
+			$nowdate = strtotime(date('c'));
+// 			$nowdate = strtotime(date($_year.'-'. $_month.'-'.$_date.' '. $_hour.':'.$_minute.':00'));
 	
 			$data = array();
 			$data['uid']     = $id;
@@ -348,10 +348,10 @@ public function aixinAC(){
 				$this->error('货币充值失败');
 				exit;
 			}
-		}else{
-			$this->error ('错误!');
-			exit;
-		}
+// 		}else{
+// 			$this->error ('错误!');
+// 			exit;
+// 		}
 	}
 	
 	//==============================充值管理
