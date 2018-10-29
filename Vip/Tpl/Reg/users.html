@@ -68,8 +68,8 @@ function ajaxagent(){
     <form method='post' id="form1" name="form1" action="__URL__/usersConfirm"/>
     <table width="100%" border="0" cellpadding="3" cellspacing="0" class="tab4">
       <tr>
-        <td width="20%" align="right"><span class="zc_hong">*</span> 推荐人：</td>
-        <td width="20%"><input name="RID" id="RID" type="text"  class="ipt" onKeyUp="guolv(this.name)" onFocus="notice('1','')" onBlur="javascript:yhServer(this.name,'1');notice('1','none')" /></td>
+        <td width="40%" align="right"><span class="zc_hong">*</span> 推荐人：</td>
+        <td width="40%"><input name="RID" id="RID" type="text"  class="ipt" onKeyUp="guolv(this.name)" onFocus="notice('1','')" onBlur="javascript:yhServer(this.name,'1');notice('1','none')" /></td>
         <td width="60%"><div id="RID1" class="info"><div id="1" class="focus_r" style="display:none;"><div class="msg_tip">请填写推荐人(默认100000)。</div></div></div> </td>
       </tr>
       <tr>
@@ -101,12 +101,12 @@ function ajaxagent(){
         <td colspan="3" style="height:5px;"><hr></td>
       </tr>
       <tr>
-        <td align="right"><span class="zc_hong">*</span> 一级密码：</td>
+        <td align="right"><span class="zc_hong">*</span> 密码：</td>
         <td><input name="Password" type="password" class="ipt"  id="Password" onFocus="notice('4','')"  onblur="javascript:yhPass(this.name);notice('4','none');" value="1"/></td>
         <td><div id="Password1" class="info"><div id="4" class="focus_r" style="display:none;"><div class="msg_tip">请使用字母加数字或符号的组合密码。</div></div></div></td>
       </tr>
       <tr>
-        <td align="right"><span class="zc_hong">*</span> 确认一级密码：</td>
+        <td align="right"><span class="zc_hong">*</span> 确认密码：</td>
         <td><input name="rePassword" type="password" class="ipt"  id="rePassword" onFocus="notice('5','')"  onblur="javascript:yhrePass(this.name,'Password');notice('5','none')" value="1"/></td>
         <td><div id="rePassword1" class="info"><div id="5" class="focus_r" style="display:none;"><div class="msg_tip">确认一级密码。</div></div></div></td>
       </tr>
@@ -173,6 +173,11 @@ function ajaxagent(){
     <tr>
         <td align="right"><span class="zc_hong">*</span>单数：</td>
         <td><input name="f4" type="text"  id="f4" class="ipt"  value="1" /></td>
+        
+      </tr>
+      <tr>
+        <td align="right"><span class="zc_hong">*</span>我已阅读</td>
+        <td><a href="__URL__/rule.html">【消费协议】</a>全部内容&nbsp;<input name="ck1" type="checkbox"  id="ck1" class="ipt"/></td>
         
       </tr>
       <tr>

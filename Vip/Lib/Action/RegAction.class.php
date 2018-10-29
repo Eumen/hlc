@@ -181,6 +181,11 @@ class RegAction extends CommonAction{
 			exit;
 		}
 		$this->assign('UserID',$_POST['UserID']);
+		$ck1 = $_POST['ck1'];
+		if (!$ck1) {
+		    $this->error('请勾选我已阅读消费协议！');
+		    exit;
+		}
 		$data = array();  //创建数据对象
 		//检测招商代表
 		$RID = trim($_POST['RID']);  //获取推荐会员帐号
@@ -706,12 +711,16 @@ class RegAction extends CommonAction{
 	//前台注册处理
 	public function us_regAC() {
 		$fck    = M ('fck');  //注册表
-// 		if (strlen($_POST['UserID'])<1){
-// 			$this->error('会员编号不能少！');
-// 			exit;
-// 		}
+		if (strlen($_POST['UserID'])<1){
+			$this->error('会员编号不能少！');
+			exit;
+		}
 		$data = array();  //创建数据对象
-		
+		$ck1 = $_POST['ck1'];
+		if (!$ck1) {
+		    $this->error('请勾选我已阅读消费协议！');
+		    exit;
+		}
 		//检测招商代表
 		$RID = trim($_POST['RID']);  //获取推荐会员帐号
 		$mapp  = array();
