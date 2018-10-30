@@ -87,7 +87,7 @@ if (mysqli_num_rows($history_result) < 1) {
                         }
                         $fck_money += $tmpMoney3;
                     } else if ($v['action_type'] == 3) {
-                        $tmpMoney4 = bcdiv($v['fhMoney'], 30,2);
+                        $tmpMoney4 = bcdiv(ceil(bcdiv($v['fhMoney'], 24,2)),30,2);
                         if($tmpMoney4 + $v['money'] >= $v['fhMoney']) {
                             $tmpMoney4 = $v['fhMoney'] - $v['money'];
                             // 设置出局标志

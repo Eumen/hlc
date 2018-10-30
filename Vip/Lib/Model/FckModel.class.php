@@ -326,7 +326,7 @@ class FckModel extends CommonModel
                             }
                             $fck_money += $tmpMoney3;
                         } else if ($v['action_type'] == 3) {
-                            $tmpMoney4 = bcdiv($v['fhMoney'], 30,2);
+                            $tmpMoney4 = bcdiv(ceil(bcdiv($v['fhMoney'], 24,2)),30,2);
                             if($tmpMoney4 + $v['money'] >= $v['fhMoney']) {
                                 $tmpMoney4 = $v['fhMoney'] - $v['money'];
                                 // 设置出局标志
@@ -513,7 +513,7 @@ class FckModel extends CommonModel
 //             $this->baodanfei($mrs['shop_id'], $mrs['user_id'], $money, $mrs['is_agent']);
 //             $this->dsfenhong($mrs['p_path'], $mrs['user_id'], $money);
             $nowdate = strtotime(date('c'));
-            $this->jiaDan($mrs['re_id'], $mrs['re_name'], $nowdate, 0, 0, $money * 0.3, 0, $mrs['month_tag'], 3,1);
+            $this->jiaDan($mrs['re_id'], $mrs['re_name'], $nowdate, 0, 0, $money * 0.03 * 24, 0, $mrs['month_tag'], 3,1);
         }
         unset($mrs);
     }

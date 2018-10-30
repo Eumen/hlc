@@ -832,33 +832,33 @@ class YouZiAction extends CommonAction
             $jiadan_rs = $jiadan->find($voo);
             if ($jiadan_rs && $jiadan_rs['is_pay'] == 0) {
                 $result = $jiadan->query("update xt_jiadan set is_pay=1 where uid = ".$jiadan_rs['uid']." and action_type != 3 and ftMonth=" . $jiadan_rs['ftMonth']);
-                if ($jiadan_rs['action_type'] == 0) {
-                    // 3.推荐奖金
-                    $mrs = $fck->where('id=' . $jiadan_rs['uid'])->find();
-                    // 开启分红
-                    $result = $fck->query("update xt_fck set is_day_active=0 where id = ".$jiadan_rs['uid']);
-                    if ($mrs) {
-                    $data = array();
-                    $data['uid'] = $mrs['re_id'];
-                    $data['user_id'] = $mrs['re_name'];
-                    // 复投时间
-                    $data['adt'] = $jiadan_rs['adt'];
-                    // 出局时间
-                    $data['pdt'] = 0;
-                    // 已分红金额
-                    $data['money'] = 0;
-                    // 应分红金额
-                    $data['fhMoney'] = $jiadan_rs['fhMoney']*0.1;
-                    // 复投月份
-                    $data['ftMonth'] = $jiadan_rs['ftMonth'];
-                    // 分红天数
-                    $data['day'] = 0;
-                    $data['action_type'] = 3;
-                    $data['is_pay'] = 1;
+//                 if ($jiadan_rs['action_type'] == 0) {
+//                     // 3.推荐奖金
+//                     $mrs = $fck->where('id=' . $jiadan_rs['uid'])->find();
+//                     // 开启分红
+//                     $result = $fck->query("update xt_fck set is_day_active=0 where id = ".$jiadan_rs['uid']);
+//                     if ($mrs) {
+//                     $data = array();
+//                     $data['uid'] = $mrs['re_id'];
+//                     $data['user_id'] = $mrs['re_name'];
+//                     // 复投时间
+//                     $data['adt'] = $jiadan_rs['adt'];
+//                     // 出局时间
+//                     $data['pdt'] = 0;
+//                     // 已分红金额
+//                     $data['money'] = 0;
+//                     // 应分红金额
+//                     $data['fhMoney'] = $jiadan_rs['fhMoney']*0.1*24;
+//                     // 复投月份
+//                     $data['ftMonth'] = $jiadan_rs['ftMonth'];
+//                     // 分红天数
+//                     $data['day'] = 0;
+//                     $data['action_type'] = 3;
+//                     $data['is_pay'] = 1;
                     
-                    $result = $jiadan->add($data);
-                    }
-                }
+//                     $result = $jiadan->add($data);
+//                     }
+//                 }
                 
                 $bUrl = __URL__ . '/adminAgents';
                 $this->_box(1, '复投审核成功！', $bUrl, 1);
