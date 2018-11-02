@@ -270,25 +270,25 @@ class TransferAction extends CommonAction{
 	
 			if($select==1){
 				$Agent_cash = $mmrs['agent_cash'];
-				if ($Agent_cash < $ePoints){            //判断电子积分
-					$this->error('电子积分余额不足!');
+				if ($Agent_cash < $ePoints){            //判断产品积分
+					$this->error('产品积分余额不足!');
 					exit;
 				}
 			}
 			if($select==3 || $select==2){
 				$AgentUse = $mmrs['agent_use'];
-				if ($AgentUse < $ePoints){            //判断消费积分
-					$this->error('消费积分余额不足!');
+				if ($AgentUse < $ePoints){            //判断现金积分
+					$this->error('现金积分余额不足!');
 					exit;
 				} else if ($mmrs['is_lock_use'] == 1){
-			        $this->error('消费积分已锁定，请联系管理员解除锁定！');
+			        $this->error('现金积分已锁定，请联系管理员解除锁定！');
 			        exit();
 				}
 			}
 			if($select==4){
 			    $AgentUse2 = $mmrs['agent_cash'];
-    			if ($AgentUse2 < $ePoints){            //判断电子积分
-    				$this->error('电子积分余额不足!');
+    			if ($AgentUse2 < $ePoints){            //判断产品积分
+    				$this->error('产品积分余额不足!');
     				exit;
     			}
 			}
