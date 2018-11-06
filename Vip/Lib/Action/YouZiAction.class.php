@@ -1277,6 +1277,8 @@ class YouZiAction extends CommonAction
 //         if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
             $fck = M('fck');
             $UserID = $_REQUEST['UserID'];
+            $minCpzj = $_REQUEST['minCpzj'];
+            $maxCpzj = $_REQUEST['maxCpzj'];
             $ss_type = (int) $_REQUEST['type'];
             
             $map = array();
@@ -1298,6 +1300,13 @@ class YouZiAction extends CommonAction
                 $where['_logic'] = 'or';
                 $map['_complex'] = $where;
                 $UserID = urlencode($UserID);
+            }
+            if (! empty($minCpzj) && ! empty($maxCpzj)) {
+                $map['cpzj'] = array(array('egt',$minCpzj),array('elt',$maxCpzj)) ;
+            } else if (empty($minCpzj) && ! empty($maxCpzj)) {
+                $map['cpzj'] = array('elt',$maxCpzj) ;
+            } else if (!empty($minCpzj) && empty($maxCpzj)) {
+                $map['cpzj'] = array('egt',$minCpzj) ;
             }
             $uulv = (int) $_REQUEST['ulevel'];
             if (! empty($uulv)) {
