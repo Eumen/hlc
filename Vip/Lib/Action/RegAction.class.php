@@ -712,13 +712,13 @@ class RegAction extends CommonAction{
 	public function us_regAC() {
 		$fck    = M ('fck');  //注册表
 		if (strlen($_POST['UserID'])<1){
-			$this->error('会员编号不能少！');
+			$this->error('Null Login Name！');
 			exit;
 		}
 		$data = array();  //创建数据对象
 		$ck1 = $_POST['ck1'];
 		if (!$ck1) {
-		    $this->error('请勾选我已阅读消费协议！');
+		    $this->error('Please confirm the agreement！');
 		    exit;
 		}
 		//检测招商代表
@@ -733,7 +733,7 @@ class RegAction extends CommonAction{
 		    $data['re_name'] = $authInfoo['user_id'];                       //招商代表帐号
 		    $data['re_level'] = $authInfoo['re_level'] + 1;                 //代数(绝对层数)
 		}else{
-		    $this->error('推荐人不存在！');
+		    $this->error('There is no recommend user！');
 		    exit;
 		}
 		//检测报单中心
@@ -783,46 +783,46 @@ class RegAction extends CommonAction{
 		$fwhere['user_id'] = trim($_POST['UserID']);
 		$frs = $fck->where($fwhere)->field('id')->find();
 		if ($frs){
-			$this->error('该会员编号已存在！');
+			$this->error('There is already Login Name！');
 			exit;
 		}
 		$kk = stripos($fwhere['user_id'],'-');
 		if($kk){
-			$this->error('会员编号中不能有扛(-)符号！');
+			$this->error('(-) is forbidden');
 			exit;
 		}
 		unset($fwhere,$frs);
 
 		$errmsg="";
 		if(empty($_POST['BankCard'])){
-			$errmsg.="<li>银行卡号不能为空！</li>";
+			$errmsg.="<li>The Account Number Can't Be Null！</li>";
 		}
 		$huhu=trim($_POST['UserName']);
 		if(empty($huhu)){
-			$errmsg.="<li>请填写开户姓名！</li>";
+			$errmsg.="<li>The Name can't be null！</li>";
 		}
 // 		if(!preg_match('/^[\x7f-\xff]+$/', $huhu)){
 // 		    $this->error('开户姓名必须是中文！');
 // 		    exit;
 // 		}
 		if(empty($_POST['UserCode'])){
-			$errmsg.="<li>请填写身份证号码！</li>";
+			$errmsg.="<li>The ID Card can't be null！</li>";
 		}
 		if(empty($_POST['UserTel'])){
-			$errmsg.="<li>请填写电话号码！</li>";
+			$errmsg.="<li>The tel can't be null！</li>";
 		}
 		if(empty($_POST['f4'])){
-			$errmsg.="<li>请填写单数</li>";
+			$errmsg.="<li>Please input the number</li>";
 		}
 		$usercc=trim($_POST['UserCode']);
 
 		if(strlen($_POST['Password']) < 1 or strlen($_POST['Password']) > 16){
-			$this->error('密码应该是1-16位！');
+			$this->error('The lenght of password should be between 6 and 16！');
 			exit;
 		}
 		$usercc=trim($_POST['UserCode']);
 		if(!preg_match("/\d{17}[\d|X]|\d{15}/", $_POST['UserCode'])){
-			$errmsg.="<li>身份证号码格式不正确！</li>";
+			$errmsg.="<li>The ID Card format is incorrect！</li>";
 		}		
 		$s_err = "<ul>";
 		$e_err = "</ul>";
@@ -927,12 +927,12 @@ class RegAction extends CommonAction{
 		unset($data,$data1,$fck,$relation);
 		if($result) {
 			echo "<script>";
-			echo "alert('恭喜您注册成功，您的账户编号：".trim($_POST['UserID'])."，请及时开通正式会员！');";
+			echo "alert('Success，your login name is：".trim($_POST['UserID'])."，please open the account in time！');";
 			echo "window.location='".__APP__."/Public/login/';";
 			echo "</script>";
 			exit;
 		}else{
-			$this->error('会员注册失败！');
+			$this->error('register failure！');
 			exit;
 		}
 	}
