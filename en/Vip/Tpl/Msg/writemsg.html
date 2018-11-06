@@ -1,0 +1,52 @@
+<include file="Public:xyHead" />
+<SCRIPT language=JavaScript>
+function checklogin() {
+	if (document.myform.UserID.value=="") {
+		alert("Please input the receiver!");
+		myform.UserID.focus();
+		return false;
+	}
+	if (document.myform.Title.value=="") {
+		alert("Please input the subject!");
+		myform.Title.focus();
+		return false;
+	}
+	return true;
+}
+</SCRIPT>
+<div class="ncenter_box">
+<div class="accounttitle"><h1>New Mail </h1></div>
+<form method='post' id="form1" name="myform" onSubmit="return checklogin()" action="__URL__/writeSave">
+<table width="100%" border="0" cellpadding="5" cellspacing="5">
+  <tr>
+    <td width="28%" align="right">User Id：</td>
+    <td width="72%">
+    <input name="UserID" type="text"  id="UserID" value="100000" readonly="readonly"/>
+    &nbsp;
+    <label>
+    <input name="level" type="radio" value="1" checked="checked" onclick="UserID.value='100000';UserID.readOnly=true;">
+    Leave the message to company</label>&nbsp;
+  
+    <label>
+    <input name="level" type="radio" value="0" onclick="UserID.value='';UserID.readOnly=false;">
+    Leave the message to member</label>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td align="right">title：</td>
+    <td><input name="Title" type="text"  id="Title" size="35" maxlength="200" /></td>
+  </tr>
+  <tr>
+    <td align="right">content：</td>
+    <td><textarea name="Msg" cols="45" rows="7" id="Msg"></textarea></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input name="submit" type="submit"  class="button_text" value="Send" /></td>
+  </tr>
+</table>
+</form>
+</div>
+</body>
+</html>

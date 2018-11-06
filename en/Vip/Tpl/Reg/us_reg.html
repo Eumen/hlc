@@ -1,0 +1,198 @@
+<include file="Public:xyHead" />
+<load href="__PUBLIC__/Js/UserJs.js" />
+<table width="100%" border="0" align="center" cellpadding="0"
+	cellspacing="0" style="margin: 0px 0px;">
+	<tr>
+		<td>
+			<div class="ncenter_box">
+				<div class="accounttitle">
+					<h1>Register User</h1>
+				</div>
+				<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tab1">
+					<tr>
+						<td>
+							<form method='post' id="form1" name="form1" action="__URL__/us_regAC" />
+							<table width="100%" border="0" cellpadding="1" cellspacing="0" class="tab4">
+								<tr>
+									<td width="15%" align="right"><span class="zc_hong">*</span>
+										Recommend UserId：</td>
+									<td width="20%"><input name="RID" id="RID" type="text"
+										value="{$rs['user_id']}" class="ipt"
+										onKeyUp="guolv(this.name)"
+										onBlur="javascript:yhServer(this.name,'1');" /><span class="zc_hong">please input ‘100000’ if no recomend user</span></td>
+								</tr>
+								<tr>
+									<td align="right"><span class="zc_hong">*</span>
+										Login Name：</td>
+									<td><input name="UserID" type="text" class="ipt"
+										id="UserID" onKeyUp="javascript:Null_Full(this.name)"
+										maxlength="10" /></td>
+								</tr>
+								<tr>
+									<td align="right"><span class="zc_hong">*</span> name：</td>
+									<td><input name="UserName" type="text" class="ipt"
+										id="UserName" onKeyUp="javascript:Null_Full(this.name)"
+										value="" maxlength="10" /></td>
+								</tr>
+								<tr>
+									<td align="right"><span class="zc_hong">*</span>tel：</td>
+									<td><input name="UserTel" type="text" class="ipt"
+										id="UserTel" onKeyUp="javascript:Null_Full(this.name)"
+										value="" /></td>
+								</tr>
+								<tr>
+									<td align="right"><span class="zc_hong">*</span>wechat：</td>
+									<td><input name="qq" type="text" class="ipt"
+										id="qq" onKeyUp="javascript:Null_Full(this.name)"
+										value="" /></td>
+								</tr>
+								<tr>
+									<td colspan="2" style="height: 1px;"><hr></td>
+								</tr>
+								<tr>
+									<td align="right"><span class="zc_hong">*</span> password：</td>
+									<td><input name="Password" type="password" class="ipt"
+										id="Password" onblur="yhPass(this.name);" value="" /></td>
+								</tr>
+								<tr>
+									<td align="right"><span class="zc_hong">*</span> confirm password：</td>
+									<td><input name="rePassword" type="password" class="ipt"
+										id="rePassword" onblur="yhrePass(this.name,'Password');"
+										value="" /></td>
+								</tr>
+								<tr>
+								<td colspan="2" style="height: 1px;"><hr></td>
+								</tr>
+								<tr>
+									<td align="right"><span class="zc_hong">*</span>Bank Name：</td>
+									<td><input name="BankName" type="text" class="ipt"
+										id="UserTel" onKeyUp="javascript:Null_Full(this.name)"
+										value="" /></td>
+								</tr>
+								<tr>
+									<td align="right"><span class="zc_hong">*</span> <span
+										id="bank_id"><eq name="bank[0]" value="">帐号<else />Bank Number</eq></span>：</td>
+									<td><input name="BankCard" type="text" class="ipt"
+										id="BankCard" onKeyUp="javascript:Null_Full(this.name)"
+										value="" maxlength="19" /></td>
+								</tr>
+<!-- 								<tr> -->
+<!-- 									<td align="right">省份：</td> -->
+<!-- 									<td><select name="BankProvince" id="s1"> -->
+<!-- 											<option></option> -->
+<!-- 									</select></td> -->
+<!-- 								</tr> -->
+<!-- 								<tr> -->
+<!-- 									<td align="right">城市：</td> -->
+<!-- 									<td><select name="BankCity" id="s2"> -->
+<!-- 											<option></option> -->
+<!-- 									</select></td> -->
+<!-- 								</tr> -->
+<!-- 								<tr> -->
+<!-- 									<td align="right">详细开户地址：</td> -->
+<!-- 									<td><input name="BankAddress" type="text" class="ipt" -->
+<!-- 										id="BankAddress" value="" /></td> -->
+<!-- 								</tr> -->
+<!-- 								<script language=JavaScript>
+// 									var s = [ "s1", "s2" ];
+// 									var opt0 = [ "请选择", "请选择" ];
+// 									function setup() {
+// 										for (i = 0; i < s.length - 1; i++)
+// 											document.getElementById(s[i]).onchange = new Function(
+// 													"change(" + (i + 1) + ")");
+// 										change(0);
+// 									}
+// 									setup();
+								</script> -->
+								<tr>
+									<td align="right"><span class="zc_hong">*</span>ID Card：</td>
+									<td><input name="UserCode" type="text" class="ipt"
+										id="UserCode" onKeyUp="javascript:Null_Full(this.name)"
+										value="" maxlength="18" /></td>
+								</tr>
+								<tr>
+									<td align="right">Level：</td>
+									<td colspan="2"><volist name="s2" id="svo"> <eq
+											name="key" value="0"> <input name="u_level" type="radio"
+											id="radio" value="{$key}" checked="checked" /> <strong><span
+											class="STYLE3">{$s9[$key]} </span></strong> <else /> <input
+											name="u_level" type="radio" id="radio" value="{$key}" /> <strong><span
+											class="STYLE3">{$s9[$key]} </span></strong> </eq> </volist></td>
+								</tr>
+								<tr>
+									<td align="right"><span class="zc_hong">*</span>Number：</td>
+									<td><input name="f4" type="text" id="f4" class="ipt"
+										value="1" /></td>
+
+								</tr>
+								<tr>
+							        <td align="right"><span class="zc_hong">*</span></td>
+							        <td><a href="__URL__/rule.html">【Agreement】</a>&nbsp;<input name="ck1" type="checkbox"  id="ck1" class="ipt"/></td>
+						       </tr>
+								<tr>
+								<td colspan="2" style="height: 1px;"><hr></td>
+								</tr>
+								<tr>
+									<td align="right">&nbsp;</td>
+									<td><span class="center"> <input name="submit1"
+											id="Access" type="submit" class="button_text" value="Confirm" />
+											&nbsp;&nbsp; <input name="Reset" type="reset"
+											class="button_text" value="Reset" id="Reset" />
+									</span></td>
+								</tr>
+							</table>
+							</form>
+						</td>
+					</tr>
+				</table>
+
+			</div>
+		</td>
+	</tr>
+</table>
+<script language="javascript">
+	function yhServer(Ful, lx) {
+		var str = $F(Ful).replace(/^\s+|\s+$/g, "");
+		var re = /[^(\w){6,20}$]/g;
+		str = str.replace(re, "");
+		document.getElementById(Ful).value = str;
+		if (str != "") {
+			if (lx == 0) {
+				ThinkAjax.send('__APP__/Fck/check_shopid/', 'ajax=1&shopid='
+						+ str, '', Ful + '1');
+			}
+			if (lx == 1) {
+				ThinkAjax.send('__APP__/Fck/check_reid/', 'ajax=1&reid=' + str,
+						'', Ful + '1');
+			}
+			if (lx == 2) {
+				ThinkAjax.send('__APP__/Fck/check_fid/', 'ajax=1&fid=' + str,
+						'', Ful + '1');
+			}
+			if (lx == 3) {
+				ThinkAjax.send('__APP__/Fck/check_userid/', 'ajax=1&userid='
+						+ str, '', Ful + '1');
+			}
+		}
+	}
+	function guolv(Ful) {
+		var str = $F(Ful).replace(/^\s+|\s+$/g, "");
+		var re = /[^(\w){6,20}$]/g;
+		str = str.replace(re, "");
+		document.getElementById(Ful).value = str;
+	}
+</script>
+<style>
+#agentall {
+	width: 100%;
+}
+
+#agentall li {
+	width: 230px;
+	float: left;
+	padding: 5px;
+	line-height: 22px;
+}
+</style>
+</body>
+</html>

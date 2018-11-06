@@ -1,0 +1,1403 @@
+[ 2018-11-06T20:33:22+08:00 ] 0.0.0.0 /en/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [8] Undefined variable: get E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 255 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 255 行.
+NOTIC: [8] Undefined index: authId_N_bvip E:\Project\private\hlc\en\Vip\Lib\ORG\RBAC.class.php 第 130 行.
+SQL: select node.id,node.name from think_role as role,think_role_user as fck,think_access as access ,think_node as node where fck.user_id='' and fck.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.001000s ]
+ERR: 1146:Table 'hlc.think_role' doesn't exist
+ [ SQL语句 ] : select node.id,node.name from think_role as role,think_role_user as fck,think_access as access ,think_node as node where fck.user_id='' and fck.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\ORG\RBAC.class.php 第 178 行.
+NOTIC: [8] Undefined index: authId_N_bvip E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 12 行.
+
+[ 2018-11-06T20:33:24+08:00 ] 0.0.0.0 /en/index.php/Public/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005000s ]
+SQL: SELECT `str21`,`i9` FROM `xt_fee` LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.288017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.289017s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-11-06T20:33:24+08:00 ] 0.0.0.0 /en/index.php/Public/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+
+[ 2018-11-06T20:33:31+08:00 ] 0.0.0.0 /en/index.php/Public/checkLogin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.006000s ]
+SQL: SELECT `id`,`user_id`,`password`,`is_pay`,`is_lock`,`nickname`,`user_name`,`is_agent`,`user_type`,`last_login_time`,`login_count`,`is_boss`,`is_aa`,`remark`,`is_treasure_manager` FROM `xt_fck` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: lang E:\Project\private\hlc\en\Vip\Lib\Action\PublicAction.class.php 第 204 行.
+NOTIC: [8] Undefined index: agent E:\Project\private\hlc\en\Vip\Lib\Action\PublicAction.class.php 第 209 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\PublicAction.class.php 第 231 行.
+SQL: SHOW COLUMNS FROM `xt_form` [ RunTime:0.005000s ]
+SQL: SELECT `title` FROM `xt_form` WHERE ( status = 1 )  [ RunTime:0.001000s ]
+SQL: UPDATE `xt_fck` SET `user_type`='4cb8ee2d4b432ae119be346f269b6ba1' WHERE ( `id` = 1 ) [ RunTime:0.108006s ]
+SQL: SELECT `prem` FROM `xt_fck` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: update xt_fck set last_login_time=new_login_time,last_login_ip=new_login_ip,new_login_time=1541507611,new_login_ip='::1' where id=1 [ RunTime:0.027002s ]
+
+[ 2018-11-06T20:33:32+08:00 ] 0.0.0.0 /en/index.php/Public/checkLogin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.006001s ]
+SQL: SELECT `id`,`user_id`,`password`,`is_pay`,`is_lock`,`nickname`,`user_name`,`is_agent`,`user_type`,`last_login_time`,`login_count`,`is_boss`,`is_aa`,`remark`,`is_treasure_manager` FROM `xt_fck` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: lang E:\Project\private\hlc\en\Vip\Lib\Action\PublicAction.class.php 第 204 行.
+NOTIC: [8] Undefined index: agent E:\Project\private\hlc\en\Vip\Lib\Action\PublicAction.class.php 第 209 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\PublicAction.class.php 第 231 行.
+SQL: SHOW COLUMNS FROM `xt_form` [ RunTime:0.005000s ]
+SQL: SELECT `title` FROM `xt_form` WHERE ( status = 1 )  [ RunTime:0.001000s ]
+SQL: UPDATE `xt_fck` SET `user_type`='af14d28848f32ec10b275275c402f6a4' WHERE ( `id` = 1 ) [ RunTime:0.058004s ]
+SQL: SELECT `prem` FROM `xt_fck` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: update xt_fck set last_login_time=new_login_time,last_login_ip=new_login_ip,new_login_time=1541507612,new_login_ip='::1' where id=1 [ RunTime:0.027002s ]
+
+[ 2018-11-06T20:33:32+08:00 ] 0.0.0.0 /en/index.php/Public
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+
+[ 2018-11-06T20:33:34+08:00 ] 0.0.0.0 /en/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [8] Undefined variable: get E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 255 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 255 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.029001s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005000s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `xt_fck` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_form` [ RunTime:0.006000s ]
+SQL: SELECT `title` FROM `xt_form` WHERE ( status = 1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xt_msg` [ RunTime:0.005001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_msg` WHERE ( s_read = 0 and s_user_id ='100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xt_jiadan` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `xt_jiadanb` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `xt_fck` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_fck` WHERE ( re_path like "%,1,%" and is_pay=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(cpzj) AS tp_sum FROM `xt_fck` WHERE ( p_path like "%,1,%" and is_pay=1 and pdt<1541507614 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(cpzj) AS tp_sum FROM `xt_fck` WHERE ( re_path like "%,1,%" and is_pay=1 and pdt<1541507614 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xt_price` [ RunTime:0.004000s ]
+SQL: select price from xt_price where id = (select max(id) from xt_price) [ RunTime:0.007000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadan` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadan` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadanb` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadanb` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_netb` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `xt_netb` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `xt_fck` SET `is_fh`=0,`is_sf`=0,_times=1541347200 WHERE _times !=1541347200 [ RunTime:0.033002s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\Project\private\hlc\en\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.126007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.127007s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2018-11-06T20:33:38+08:00 ] 0.0.0.0 /en/index.php/Index/newsIndex/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [8] Constant THEME_NAME already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.049002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2018-11-06T20:33:41+08:00 ] 0.0.0.0 /en/index.php/Index/treasureIndex/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [8] Constant THEME_NAME already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.071004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2018-11-06T20:33:43+08:00 ] 0.0.0.0 /en/index.php/Bonus/financeTable
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.010000s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.006001s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `xt_bonus` [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: UserID E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 102 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_bonus` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: FanNowDate E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 129 行.
+NOTIC: [8] Undefined property: ZQPage::$ColPages E:\Project\private\hlc\en\Vip\Lib\ORG\ZQPage.class.php 第 133 行.
+SQL: SELECT * FROM `xt_bonus` WHERE ( `uid` = 1 ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 0 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 1 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 2 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 3 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 4 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 5 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 6 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 7 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 8 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 9 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 11 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 12 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 13 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 14 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 15 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 16 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 17 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 18 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 19 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 20 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 21 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b22 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 22 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b23 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 23 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b24 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 24 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b25 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 25 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b26 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 26 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b27 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 27 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b28 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 28 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b29 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 29 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b30 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 30 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b31 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 31 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b32 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 32 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b33 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 33 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b34 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 34 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b35 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 35 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b36 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 36 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b37 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 37 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b38 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 38 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b39 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 39 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b40 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 40 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b41 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 41 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b42 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 42 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b43 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 43 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b44 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 44 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b45 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 45 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b46 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 46 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b47 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 47 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b48 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 48 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b49 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 49 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b50 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 50 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b51 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 51 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b52 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 52 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b53 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 53 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b54 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 54 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b55 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 55 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b56 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 56 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b57 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 57 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b58 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 58 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b59 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 59 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b60 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 60 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b61 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 61 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b62 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 62 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b63 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 63 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b64 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 64 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b65 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 65 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b66 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 66 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b67 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 67 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b68 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 68 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b69 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 69 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b70 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 70 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b71 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 71 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b72 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 72 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b73 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 73 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b74 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 74 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b75 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 75 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b76 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 76 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b77 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 77 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b78 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 78 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b79 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 79 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b80 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 80 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b81 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 81 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b82 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 82 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b83 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 83 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b84 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 84 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b85 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 85 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b86 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 86 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b87 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 87 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b88 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 88 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b89 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 89 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b90 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 90 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b91 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 91 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b92 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 92 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b93 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 93 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b94 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 94 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b95 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 95 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b96 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 96 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b97 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 97 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b98 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 98 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b99 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 99 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b100 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 100 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b22 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b23 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b24 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b25 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b26 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b27 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b28 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b29 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b30 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b31 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b32 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b33 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b34 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b35 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b36 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b37 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b38 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b39 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b40 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b41 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b42 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b43 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b44 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b45 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b46 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b47 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b48 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b49 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b50 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b51 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b52 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b53 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b54 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b55 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b56 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b57 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b58 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b59 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b60 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b61 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b62 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b63 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b64 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b65 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b66 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b67 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b68 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b69 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b70 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b71 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b72 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b73 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b74 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b75 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b76 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b77 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b78 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b79 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b80 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b81 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b82 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b83 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b84 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b85 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b86 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b87 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b88 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b89 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b90 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b91 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b92 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b93 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b94 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b95 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b96 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b97 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b98 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b99 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+NOTIC: [8] Undefined index: b100 E:\Project\private\hlc\en\Vip\Lib\Action\BonusAction.class.php 第 142 行.
+SQL: SELECT `s18` FROM `xt_fee` LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: user_id E:\Project\private\hlc\en\Vip\Runtime\Cache\fd484a5cf64ace87e7298a55657f0456.php 第 114 行.
+NOTIC: [8] Undefined variable: user_id E:\Project\private\hlc\en\Vip\Runtime\Cache\fd484a5cf64ace87e7298a55657f0456.php 第 114 行.
+NOTIC: [8] Undefined variable: user_id E:\Project\private\hlc\en\Vip\Runtime\Cache\fd484a5cf64ace87e7298a55657f0456.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-11-06T20:33:49+08:00 ] 0.0.0.0 /en/index.php/Index/newsIndex/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [8] Constant THEME_NAME already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-11-06T20:33:53+08:00 ] 0.0.0.0 /en/index.php/News/News
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.006000s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005001s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `xt_form` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_form` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: ZQPage::$ColPages E:\Project\private\hlc\en\Vip\Lib\ORG\ZQPage.class.php 第 133 行.
+SQL: SELECT * FROM `xt_form` WHERE ( `status` = 1 ) ORDER BY baile desc,id desc LIMIT 0,20   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Vip/../Public/inbox.html): failed to open stream: No such file or directory E:\Project\private\hlc\en\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-11-06T20:33:58+08:00 ] 0.0.0.0 /en/index.php/Msg/writemsg
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.006000s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005000s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SELECT * FROM `xt_fck` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-11-06T20:34:03+08:00 ] 0.0.0.0 /en/index.php/Msg/inmsg
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.007000s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.004000s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `xt_msg` [ RunTime:0.005001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_msg` WHERE ( `s_uid` = 1 ) AND ( `s_del` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `xt_msg` WHERE ( `s_uid` = 1 ) AND ( `s_del` = 0 ) ORDER BY id desc LIMIT 0,12   [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.071004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-11-06T20:34:08+08:00 ] 0.0.0.0 /en/index.php/Msg/outmsg
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.006001s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005000s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `xt_msg` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_msg` WHERE ( `f_uid` = 1 ) AND ( `f_del` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `xt_msg` WHERE ( `f_uid` = 1 ) AND ( `f_del` = 0 ) ORDER BY id desc LIMIT 0,12   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.072004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-11-06T20:34:20+08:00 ] 0.0.0.0 /en/index.php/Msg/writemsg
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.007001s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.006000s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SELECT * FROM `xt_fck` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-11-06T20:36:26+08:00 ] 0.0.0.0 /en/index.php/Msg/writemsg
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.006001s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005000s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SELECT * FROM `xt_fck` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2018-11-06T20:36:45+08:00 ] 0.0.0.0 /en/index.php/News/News
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.006000s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005000s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `xt_form` [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_form` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: ZQPage::$ColPages E:\Project\private\hlc\en\Vip\Lib\ORG\ZQPage.class.php 第 133 行.
+SQL: SELECT * FROM `xt_form` WHERE ( `status` = 1 ) ORDER BY baile desc,id desc LIMIT 0,20   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Vip/../Public/inbox.html): failed to open stream: No such file or directory E:\Project\private\hlc\en\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-11-06T20:37:13+08:00 ] 0.0.0.0 /en/index.php/News/News
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.007000s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005001s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `xt_form` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_form` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: ZQPage::$ColPages E:\Project\private\hlc\en\Vip\Lib\ORG\ZQPage.class.php 第 133 行.
+SQL: SELECT * FROM `xt_form` WHERE ( `status` = 1 ) ORDER BY baile desc,id desc LIMIT 0,20   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Vip/../Public/inbox.html): failed to open stream: No such file or directory E:\Project\private\hlc\en\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2018-11-06T20:37:15+08:00 ] 0.0.0.0 /en/index.php/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [8] Undefined variable: get E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 255 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 255 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.007001s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005000s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `xt_fck` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xt_form` [ RunTime:0.004001s ]
+SQL: SELECT `title` FROM `xt_form` WHERE ( status = 1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_msg` [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_msg` WHERE ( s_read = 0 and s_user_id ='100000' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_jiadan` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `xt_jiadanb` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `xt_fck` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_fck` WHERE ( re_path like "%,1,%" and is_pay=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(cpzj) AS tp_sum FROM `xt_fck` WHERE ( p_path like "%,1,%" and is_pay=1 and pdt<1541507835 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(cpzj) AS tp_sum FROM `xt_fck` WHERE ( re_path like "%,1,%" and is_pay=1 and pdt<1541507835 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_price` [ RunTime:0.004000s ]
+SQL: select price from xt_price where id = (select max(id) from xt_price) [ RunTime:0.001000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadan` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadan` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadanb` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadanb` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_netb` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `xt_netb` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `xt_fck` SET `is_fh`=0,`is_sf`=0,_times=1541347200 WHERE _times !=1541347200 [ RunTime:0.000000s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\Project\private\hlc\en\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-11-06T20:37:17+08:00 ] 0.0.0.0 /en/index.php/Index/newsIndex/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [8] Constant THEME_NAME already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-11-06T20:37:20+08:00 ] 0.0.0.0 /en/index.php/Msg/writemsg
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.006000s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005000s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SELECT * FROM `xt_fck` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-11-06T20:37:23+08:00 ] 0.0.0.0 /en/index.php/Msg/inmsg
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.006000s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005000s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `xt_msg` [ RunTime:0.005001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_msg` WHERE ( `s_uid` = 1 ) AND ( `s_del` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `xt_msg` WHERE ( `s_uid` = 1 ) AND ( `s_del` = 0 ) ORDER BY id desc LIMIT 0,12   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-11-06T20:38:27+08:00 ] 0.0.0.0 /en/index.php/Msg/inmsg
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.007001s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005001s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `xt_msg` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_msg` WHERE ( `s_uid` = 1 ) AND ( `s_del` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `xt_msg` WHERE ( `s_uid` = 1 ) AND ( `s_del` = 0 ) ORDER BY id desc LIMIT 0,12   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-11-06T20:38:31+08:00 ] 0.0.0.0 /en/index.php/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [8] Undefined variable: get E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 255 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 255 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.015001s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005000s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `xt_fck` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_form` [ RunTime:0.005000s ]
+SQL: SELECT `title` FROM `xt_form` WHERE ( status = 1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xt_msg` [ RunTime:0.005001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_msg` WHERE ( s_read = 0 and s_user_id ='100000' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_jiadan` [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `xt_jiadanb` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `xt_fck` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_fck` WHERE ( re_path like "%,1,%" and is_pay=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(cpzj) AS tp_sum FROM `xt_fck` WHERE ( p_path like "%,1,%" and is_pay=1 and pdt<1541507911 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(cpzj) AS tp_sum FROM `xt_fck` WHERE ( re_path like "%,1,%" and is_pay=1 and pdt<1541507911 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xt_price` [ RunTime:0.005001s ]
+SQL: select price from xt_price where id = (select max(id) from xt_price) [ RunTime:0.000000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadan` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadan` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadanb` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadanb` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_netb` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `xt_netb` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `xt_fck` SET `is_fh`=0,`is_sf`=0,_times=1541347200 WHERE _times !=1541347200 [ RunTime:0.001000s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\Project\private\hlc\en\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-11-06T20:38:32+08:00 ] 0.0.0.0 /en/index.php/Index/newsIndex/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [8] Constant THEME_NAME already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-11-06T20:38:36+08:00 ] 0.0.0.0 /en/index.php/Msg/outmsg
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.007000s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.006001s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `xt_msg` [ RunTime:0.005001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_msg` WHERE ( `f_uid` = 1 ) AND ( `f_del` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `xt_msg` WHERE ( `f_uid` = 1 ) AND ( `f_del` = 0 ) ORDER BY id desc LIMIT 0,12   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-11-06T20:39:28+08:00 ] 0.0.0.0 /en/index.php/Msg/outmsg
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.007001s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005001s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `xt_msg` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_msg` WHERE ( `f_uid` = 1 ) AND ( `f_del` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `xt_msg` WHERE ( `f_uid` = 1 ) AND ( `f_del` = 0 ) ORDER BY id desc LIMIT 0,12   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-11-06T20:39:35+08:00 ] 0.0.0.0 /en/index.php/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [8] Undefined variable: get E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 255 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 255 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.007000s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 1 ) AND ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.006000s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `xt_fck` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xt_form` [ RunTime:0.005000s ]
+SQL: SELECT `title` FROM `xt_form` WHERE ( status = 1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xt_msg` [ RunTime:0.005001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_msg` WHERE ( s_read = 0 and s_user_id ='100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xt_jiadan` [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `xt_jiadanb` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `xt_fck` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_fck` WHERE ( re_path like "%,1,%" and is_pay=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(cpzj) AS tp_sum FROM `xt_fck` WHERE ( p_path like "%,1,%" and is_pay=1 and pdt<1541507975 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(cpzj) AS tp_sum FROM `xt_fck` WHERE ( re_path like "%,1,%" and is_pay=1 and pdt<1541507975 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_price` [ RunTime:0.004000s ]
+SQL: select price from xt_price where id = (select max(id) from xt_price) [ RunTime:0.001000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadan` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadan` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadanb` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadanb` WHERE ( `user_id` = '100000' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xt_netb` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `xt_netb` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: UPDATE `xt_fck` SET `is_fh`=0,`is_sf`=0,_times=1541347200 WHERE _times !=1541347200 [ RunTime:0.000000s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\Project\private\hlc\en\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-11-06T20:39:37+08:00 ] 0.0.0.0 /en/index.php/Index/agentIndex/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+NOTIC: [8] Constant THEME_NAME already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined E:\Project\private\hlc\en\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-11-06T20:39:53+08:00 ] 0.0.0.0 /en/index.php/Public/LogOut/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-11-06T20:39:55+08:00 ] 0.0.0.0 /en/index.php/Public/login/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.006000s ]
+SQL: SELECT `str21`,`i9` FROM `xt_fee` LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-11-06T20:39:55+08:00 ] 0.0.0.0 /en/index.php/Public/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+
+[ 2018-11-06T20:40:02+08:00 ] 0.0.0.0 /en/index.php/Public/checkLogin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.007001s ]
+SQL: SELECT `id`,`user_id`,`password`,`is_pay`,`is_lock`,`nickname`,`user_name`,`is_agent`,`user_type`,`last_login_time`,`login_count`,`is_boss`,`is_aa`,`remark`,`is_treasure_manager` FROM `xt_fck` WHERE ( `user_id` = 'test1' ) LIMIT 1   [ RunTime:0.001001s ]
+
+[ 2018-11-06T20:40:03+08:00 ] 0.0.0.0 /en/index.php/Public/checkLogin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.006000s ]
+SQL: SELECT `id`,`user_id`,`password`,`is_pay`,`is_lock`,`nickname`,`user_name`,`is_agent`,`user_type`,`last_login_time`,`login_count`,`is_boss`,`is_aa`,`remark`,`is_treasure_manager` FROM `xt_fck` WHERE ( `user_id` = 'test1' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2018-11-06T20:40:07+08:00 ] 0.0.0.0 /en/index.php/Public/checkLogin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.006000s ]
+SQL: SELECT `id`,`user_id`,`password`,`is_pay`,`is_lock`,`nickname`,`user_name`,`is_agent`,`user_type`,`last_login_time`,`login_count`,`is_boss`,`is_aa`,`remark`,`is_treasure_manager` FROM `xt_fck` WHERE ( `user_id` = 'test1' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2018-11-06T20:40:13+08:00 ] 0.0.0.0 /en/index.php/Public/checkLogin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 249 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.006000s ]
+SQL: SELECT `id`,`user_id`,`password`,`is_pay`,`is_lock`,`nickname`,`user_name`,`is_agent`,`user_type`,`last_login_time`,`login_count`,`is_boss`,`is_aa`,`remark`,`is_treasure_manager` FROM `xt_fck` WHERE ( `user_id` = 'test1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: lang E:\Project\private\hlc\en\Vip\Lib\Action\PublicAction.class.php 第 204 行.
+NOTIC: [8] Undefined index: agent E:\Project\private\hlc\en\Vip\Lib\Action\PublicAction.class.php 第 209 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\PublicAction.class.php 第 231 行.
+SQL: SHOW COLUMNS FROM `xt_form` [ RunTime:0.005000s ]
+SQL: SELECT `title` FROM `xt_form` WHERE ( status = 1 )  [ RunTime:0.000000s ]
+SQL: UPDATE `xt_fck` SET `user_type`='142dc74ec12ef8a9c5e62814ef2f0518' WHERE ( `id` = 5504 ) [ RunTime:0.062003s ]
+SQL: SELECT `prem` FROM `xt_fck` WHERE ( `id` = 5504 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: update xt_fck set last_login_time=new_login_time,last_login_ip=new_login_ip,new_login_time=1541508013,new_login_ip='::1' where id=5504 [ RunTime:0.013000s ]
+
+[ 2018-11-06T20:40:14+08:00 ] 0.0.0.0 /en/index.php/Public
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] preg_match() expects parameter 2 to be string, array given E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 256 行.
+
+[ 2018-11-06T20:40:15+08:00 ] 0.0.0.0 /en/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: post E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 248 行.
+NOTIC: [8] Undefined variable: get E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 255 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 255 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 152 行.
+NOTIC: [2048] mktime(): You should be using the time() function instead E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.007001s ]
+SQL: SELECT `user_id`,`password`,`user_type`,`is_lock` FROM `xt_fck` WHERE ( `id` = 5504 ) AND ( `user_id` = 'test1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_fee` [ RunTime:0.005001s ]
+SQL: SELECT `i3`,`str27` FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user_type E:\Project\private\hlc\en\Vip\Lib\Action\CommonAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `xt_fck` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `xt_fck` WHERE ( `id` = 5504 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_form` [ RunTime:0.005001s ]
+SQL: SELECT `title` FROM `xt_form` WHERE ( status = 1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_msg` [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_msg` WHERE ( s_read = 0 and s_user_id ='test1' ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: SELECT * FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_jiadan` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `xt_jiadanb` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `xt_fck` WHERE ( id=5504 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xt_fck` WHERE ( re_path like "%,5504,%" and is_pay=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(cpzj) AS tp_sum FROM `xt_fck` WHERE ( p_path like "%,5504,%" and is_pay=1 and pdt<1541508015 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(cpzj) AS tp_sum FROM `xt_fck` WHERE ( re_path like "%,5504,%" and is_pay=1 and pdt<1541508015 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_price` [ RunTime:0.006000s ]
+SQL: select price from xt_price where id = (select max(id) from xt_price) [ RunTime:0.001000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadan` WHERE ( `user_id` = 'test1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadan` WHERE ( `user_id` = 'test1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadanb` WHERE ( `user_id` = 'test1' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `money`,`danshu` FROM `xt_jiadanb` WHERE ( `user_id` = 'test1' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xt_netb` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `xt_netb` WHERE ( uid=5504 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `xt_fee` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `xt_fck` SET `is_fh`=0,`is_sf`=0,_times=1541347200 WHERE _times !=1541347200 [ RunTime:0.000000s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given E:\Project\private\hlc\en\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
