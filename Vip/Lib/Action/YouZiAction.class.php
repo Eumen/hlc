@@ -1277,6 +1277,8 @@ class YouZiAction extends CommonAction
 //         if ($_SESSION['UrlPTPass'] == 'MyssGuanShuiPuTao') {
             $fck = M('fck');
             $UserID = $_REQUEST['UserID'];
+            $minCpzj = $_REQUEST['minCpzj'];
+            $maxCpzj = $_REQUEST['maxCpzj'];
             $ss_type = (int) $_REQUEST['type'];
             
             $map = array();
@@ -1298,6 +1300,13 @@ class YouZiAction extends CommonAction
                 $where['_logic'] = 'or';
                 $map['_complex'] = $where;
                 $UserID = urlencode($UserID);
+            }
+            if (! empty($minCpzj) && ! empty($maxCpzj)) {
+                $map['cpzj'] = array(array('egt',$minCpzj),array('elt',$maxCpzj)) ;
+            } else if (empty($minCpzj) && ! empty($maxCpzj)) {
+                $map['cpzj'] = array('elt',$maxCpzj) ;
+            } else if (!empty($minCpzj) && empty($maxCpzj)) {
+                $map['cpzj'] = array('egt',$minCpzj) ;
             }
             $uulv = (int) $_REQUEST['ulevel'];
             if (! empty($uulv)) {
@@ -3513,7 +3522,7 @@ class YouZiAction extends CommonAction
         echo "<td>注册单数</td>";
         echo "<td>复投单数</td>";
         echo "<td>现金积分余额</td>";
-        echo "<td>电子积分余额</td>";
+        echo "<td>产品积分余额</td>";
         echo "<td>A网复投积分余额</td>";
         echo "<td>B网复投积分余额</td>";
         echo "<td>B网注册单数</td>";
@@ -3532,18 +3541,18 @@ class YouZiAction extends CommonAction
         echo "<td>B网总分红包</td>";
         echo "<td>B网未出局分红包</td>";
         echo "<td>提现金额</td>";
-        echo "<td>累计转出电子积分</td>";
-        echo "<td>累计转入电子积分</td>";
+        echo "<td>累计转出产品积分</td>";
+        echo "<td>累计转入产品积分</td>";
         echo "<td>累计转出现金积分</td>";
         echo "<td>累计转入现金积分</td>";
         echo "<td>累计转出激活积分</td>";
         echo "<td>累计转入激活积分</td>";
         echo "<td>累计转入复投积分</td>";
         echo "<td>累计充入现金积分</td>";
-        echo "<td>累计充入电子积分</td>";
+        echo "<td>累计充入产品积分</td>";
         echo "<td>累计充入激活积分</td>";
-        echo "<td>个人累计电子积分复投单数</td>";
-        echo "<td>个人累计电子积分复投金额</td>";
+        echo "<td>个人累计产品积分复投单数</td>";
+        echo "<td>个人累计产品积分复投金额</td>";
         echo "<td>销售团队累计电子币复投单数</td>";
         echo "<td>销售团队累计电子币复投金额</td>";
         echo "<td>个人累计现金积分复投单数</td>";

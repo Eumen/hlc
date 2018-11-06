@@ -3,7 +3,7 @@
     zy
     2018年3月27日
 */
-$con=mysqli_connect("localhost","root","123qwe!@#","myproject");
+$con=mysqli_connect("localhost","root","123qwe!@#","hlc");
 // 检查连接
 if (!$con) {     
        print 'Cant connect to MySQL Server'.mysqli_connect_error();     

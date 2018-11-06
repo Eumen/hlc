@@ -53,8 +53,8 @@ function CheckAll(form)
 <tr>
   <td align="right">充值类型：</td>
   <td><select name="stype">
-<!--       <option value="0">充值电子积分</option> -->
-      <option value="1">充值消费积分</option>
+<!--       <option value="0">充值产品积分</option> -->
+      <option value="1">充值现金积分</option>
       </select></td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ function CheckAll(form)
 	<td><span class="STYLE1">{$vo['epoint']}</span></td>
 	<td><span class="STYLE1">{$vo['huikuan']}</span></td>
 	<td>
-		<eq name="vo.stype" value="0">充入电子积分</eq>
+		<eq name="vo.stype" value="0">充入产品积分</eq>
 		<eq name="vo.stype" value="1">充入现金积分</eq>
 		<eq name="vo.stype" value="2">充入激活积分</eq>
 	</td>

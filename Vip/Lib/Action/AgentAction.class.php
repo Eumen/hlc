@@ -709,7 +709,7 @@ class AgentAction extends CommonAction
             // 复投金额：注册金额的30%
             $tmpMoney = $fck_rs['cpzj'] * 0.3;
             if ($fck_rs['agent_use'] < $tmpMoney && $futou == 2) {
-                $this->error('消费积分不足！');
+                $this->error('现金积分不足！');
                 exit();
             }
             // 现在时间
@@ -1490,7 +1490,7 @@ class AgentAction extends CommonAction
                 
                 if ($us_money < $money_b) {
                     $bUrl = __URL__ . '/menber';
-                    $this->_box(0, '电子积分余额不足！', $bUrl, 1);
+                    $this->_box(0, '产品积分余额不足！', $bUrl, 1);
                     exit();
                 }
                 $r_id = $rs['id'];

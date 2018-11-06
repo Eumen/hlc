@@ -225,7 +225,7 @@ class ChangeAction extends CommonAction {
 
     /* ********************** 修改密码 ********************* */
     public function changepasswordSave(){
-    	if ($_SESSION['DLTZURL01'] == 'changepassword'){
+//     	if ($_SESSION['DLTZURL01'] == 'changepassword'){
 			$fck    =   M('fck');
 			if(md5($_POST['verify']) != $_SESSION['verify']) {
 				$this->error('验证码错误！');
@@ -316,10 +316,10 @@ class ChangeAction extends CommonAction {
 				$this->_box(1,'修改密码成功！',$bUrl,1);
 				exit;
 	        }
-    	}else{
-			$this->error('操作错误!');
-			exit;
-		}
+//     	}else{
+// 			$this->error('操作错误!');
+// 			exit;
+// 		}
     }
 
     public function pprofile() {

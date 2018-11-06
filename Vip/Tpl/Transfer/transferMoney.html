@@ -28,11 +28,11 @@ function yhServer(Ful){
     <form name="form1" method="post" action="__URL__/transferMoneyAC" onSubmit="{return CheckForm();}">
       <table width="100%" border="0" cellpadding="3" cellspacing="0">
           <tr>
-            <td height="30" align="right" width="30%">消费积分： </td>
+            <td height="30" align="right" width="30%">现金积分： </td>
             <td colspan="2"><span class="hong">{$rs.agent_use}</span></td>
           </tr>
           <tr>
-            <td height="30" align="right" width="30%">电子积分： </td>
+            <td height="30" align="right" width="30%">产品积分： </td>
             <td colspan="2"><span class="hong">{$rs.agent_cash}</span></td>
           </tr>
 		
@@ -43,7 +43,7 @@ function yhServer(Ful){
             <td colspan="2">
             <select name="select" id="select" onchange="Selev(this.value)" onpropertychange="Selev(this.value)">
               <!-- <option value="1"> 现金币 转给 其他会员 </option>-->
-      		    <option value="4"> 电子积分 转给 其他会员 </option>
+      		    <option value="4"> 产品积分 转给 其他会员 </option>
             </select>
             </td>
           </tr>
@@ -93,10 +93,10 @@ function yhServer(Ful){
 		<td>{$vo['in_userid']}</td>
 		<td>{$vo['rdt']|date='Y-m-d H:i:s',###}</td>
 		<td>{$vo['epoint']}</td>
-        <td><eq name="vo['type']" value="1">电子积分 转 消费积分</eq>
-        	<eq name="vo['type']" value="2">消费积分 转 电子积分</eq>
-        	<eq name="vo['type']" value="3">消费积分 转 复投积分</eq>
-        	<eq name="vo['type']" value="4">电子积分 转给 其他会员</eq>
+        <td><eq name="vo['type']" value="1">产品积分 转 现金积分</eq>
+        	<eq name="vo['type']" value="2">现金积分 转 产品积分</eq>
+        	<eq name="vo['type']" value="3">现金积分 转 复投积分</eq>
+        	<eq name="vo['type']" value="4">产品积分 转给 其他会员</eq>
         	<eq name="vo['type']" value="5">激活积分 转给 其他会员</eq>
         </td>
       <!--  <td>{$vo['sm']}</td>-->

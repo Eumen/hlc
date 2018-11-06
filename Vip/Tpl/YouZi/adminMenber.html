@@ -3,7 +3,14 @@
 <script language=javascript src="__PUBLIC__/Js/wpCalendar.js"></script>
 <div class="ncenter_box">
 <div class="accounttitle"><h1>会员管理 </h1></div>
-<div><h4>&nbsp;&nbsp;&nbsp;&nbsp;总业绩：{$f4_count22} </h4></div>
+<form method='post' action="__URL__/adminMenber/">投资金额区间：
+	<input type="text" name="minCpzj" placeholder="最小值">
+    ——
+    <input type="text" name="maxCpzj" placeholder="最大值">
+    &nbsp;&nbsp;
+    <input type="submit" name="Submit" value="查询"  class="btn-xs btn-default"/>
+    <br>总业绩：{$f4_count22}
+</form>
 <form name="form3" method="post" action="__URL__/adminMenberAC">
 <table width="100%" class="tab3" border="0" cellpadding="3" cellspacing="1" id="tb1" bgcolor="#b9c8d0">
 	<thead>
@@ -12,7 +19,7 @@
         <th><span>会员编号</span></th>
 		<th><span>密码</span></th>
 		<th><span>推荐人</span></th>
-		<th><span>消费积分</span></th>
+		<th><span>现金积分</span></th>
         <th><span>开通时间</span></th>
         <th><span>注册金额</span></th>
          <th><span>复投次数</span></th>
@@ -67,6 +74,19 @@
     </tr>
 </table>
 </form>
+<table width="100%" align="center">
+    <tr>
+    <td align="center">
+<!--     <input name="button3" type="button" onclick="window.location.href='__URL__/memberInfoDaochu/'" value="将所有会员平台信息导出Excel表格" class="btn-xs btn-success" /> -->
+<!--     <input name="button3" type="button" onclick="window.location.href='__URL__/memberDataDaochu/'" value="将所有会员个人信息导出Excel表格" class="btn-xs btn-info" /> -->
+<!--     <input name="button3" type="button" onclick="window.location.href='__URL__/memberDataDel/'" value="删除所有会员个人信息" class="btn-xs btn-danger" /> -->
+<!--     <input name="button3" type="button" onclick="window.location.href='__URL__/transferDataDaochu/'" value="将所有会员转账信息导出Excel表格" class="btn-xs btn-primary" /> -->
+<!--     <input name="button3" type="button" onclick="window.location.href='__URL__/withdrawDataDaochu/'" value="将所有会员提现已确认信息导出Excel表格" class="btn-xs btn-default" /> -->
+<!--     <input name="button3" type="button" onclick="window.location.href='__URL__/withdrawData2Daochu/'" value="将所有会员提现未确认信息导出Excel表格" class="btn-xs btn-warning" /> -->
+<!--     <input name="button3" type="button" onclick="window.location.href='__URL__/monthDataDaochu/'" value="按月统计业绩导出Excel表格" class="btn-xs btn-info" /> -->
+</td>
+    </tr>
+</table>
 </div>
 </body>
 </html>
