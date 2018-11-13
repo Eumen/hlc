@@ -38,7 +38,7 @@ function CheckForm(){
       <td colspan="4" style=" height:5px;"><hr></td>
       </tr>
     <tr>
-      <td height="30" align="right">Cost point：</td>
+      <td height="30" align="right">Cash point：</td>
       <td colspan="2"><span class="hong">{$frs['agent_use']}</span></td>
       </tr>
 <!-- 	<tr> -->
@@ -56,7 +56,7 @@ function CheckForm(){
 	  <td>
       <select name="stype">
 <!--       <option value="0">充值电子积分</option> -->
-      <option value="1">Cost Point</option>
+      <option value="1">Cash Point</option>
       </select></td>
 	  <td></td>
     </tr>
@@ -99,12 +99,12 @@ function CheckForm(){
 <table width="100%" class="tab3" border="0" cellpadding="3" cellspacing="1" id="tb1" bgcolor="#b9c8d0">
 	<thead>
 		<tr>
-			<th><span>{$User_namex}</span></th>
+			<th><span>User Account</span></th>
 			<th><span>Amount</span></th>
 			<th><span>Type</span></th>
 			<th><span>Date</span></th>
             <th><span>Number</span></th>
-            <th><span>Account</span></th>
+            <th><span>Receiving Account</span></th>
 			<th><span>Status</span></th>
 		</tr>
 	</thead>
@@ -112,7 +112,7 @@ function CheckForm(){
 	<tr align="center">
         <td>{$vo['user_id']}</td>
         <td>{$vo['epoint']}</td>
-        <td><eq name="vo.stype" value="0">充入电子积分<else/>充入消费积分</eq></td>
+        <td><eq name="vo.stype" value="0">充入电子积分<else/>Cash Point</eq></td>
         <td>{$vo.rdt|date='Y-m-d H:i:s',###}</td>
         <td>{$vo['huikuan']}</td>
         <td>{$vo['zhuanghao']}</td>

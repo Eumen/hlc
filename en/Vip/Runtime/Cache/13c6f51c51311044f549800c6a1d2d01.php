@@ -124,7 +124,7 @@ function yhServer(Ful){
         <td width="30%">&nbsp;</td>
       </tr>
       <tr>
-        <td height="30" align="right">Cost Point：</td>
+        <td height="30" align="right">Cash Point：</td>
         <td colspan="2"><span class="hong"><?php echo ($rs['agent_use']); ?></span></td></tr>
 		
 	 <!-- <tr>
@@ -133,10 +133,10 @@ function yhServer(Ful){
 		
       <tr> -->
         <td width="25%" height="30">&nbsp;</td>
-        <td colspan="2"><span style="color:red;"><!--提现手续费 <?php echo ($menber); ?> %，-->the minmium <?php echo ($minn); ?></span></td>
+        <td colspan="2"><span style="color:red;"><!--提现手续费 <?php echo ($menber); ?> %，-->the minimum withdrawal amount is 0, and the withdrawal amount must be a multiple of 100</span></td>
       </tr>
       <tr>
-        <td height="30" align="right"><?php echo ($User_namex); ?>：</td>
+        <td height="30" align="right">User Account：</td>
         <td><input name="UserID" type="text" readonly="readonly" value="<?php echo ($rs['user_id']); ?>"/></td>
         <td></td>
       </tr>
