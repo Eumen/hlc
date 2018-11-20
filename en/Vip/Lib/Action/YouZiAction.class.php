@@ -1287,7 +1287,7 @@ class YouZiAction extends CommonAction
                     $UserID = iconv('GB2312', 'UTF-8', $UserID);
                 }
                 unset($KuoZhan);
-                $where['nickname'] = array(
+                $where['user_name'] = array(
                     'like',
                     "%" . $UserID . "%"
                 );

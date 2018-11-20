@@ -3,10 +3,13 @@
 <script language=javascript src="__PUBLIC__/Js/wpCalendar.js"></script>
 <div class="ncenter_box">
 <div class="accounttitle"><h1>会员管理 </h1></div>
-<form method='post' action="__URL__/adminMenber/">投资金额区间：
+<form method='post' action="__URL__/adminMenber/">
+	投资金额区间：
 	<input type="text" name="minCpzj" placeholder="最小值">
     ——
     <input type="text" name="maxCpzj" placeholder="最大值">
+    &nbsp;&nbsp;
+    <input type="text" name="UserID" placeholder="会员编号或者姓名">
     &nbsp;&nbsp;
     <input type="submit" name="Submit" value="查询"  class="btn-xs btn-default"/>
     <br>总业绩：{$f4_count22}
@@ -17,6 +20,7 @@
     <tr align="center">
         <th></th>
         <th><span>会员编号</span></th>
+        <th><span>会员姓名</span></th>
 		<th><span>密码</span></th>
 		<th><span>推荐人</span></th>
 		<th><span>现金积分</span></th>
@@ -33,6 +37,7 @@
     <tr class="content_td lz" align="center">
         <td><input type="checkbox" name="tabledb[]" value="{$vo['id']}" class="btn2" /></td>
         <td><a href="__URL__/adminuserData/PT_id/{$vo['id']}">{$vo['user_id']}</a></td>
+        <td>{$vo['user_name']}</td>
 		<td>{$vo['pwd1']}</td>
 		<td>{$vo['re_name']}</td>
 		<td>{$vo['agent_use']}</td>
