@@ -38,7 +38,7 @@ class IndexAction extends CommonAction {
 		->field('*')
 		->find();
 		$this->assign('fck_rs', $urs); // 总奖金
-		$this->assign('lockAmount', $urs['cpzj'] * 0.7);
+		$this->assign('lockAmount', $urs['agent_cf']);
 		// 团队人数
 		$all_nn = $fck->where('re_path like "%,' . $id . ',%" and is_pay=1')->count();
 		$this->assign('all_nn', $all_nn);
