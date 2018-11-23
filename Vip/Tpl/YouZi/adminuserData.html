@@ -106,15 +106,16 @@
 		
         <tr>
           <td align="right">开户银行：</td>
-          <td><select name="BankName" onchange="javasctip:bank_us(this.value);">
-              <volist name='bank' id='voo'>
-                <eq name='bank[$key]' value="$b_bank['bank_name']">
-                  <option value="{$bank[$key]}" selected="selected">{$bank[$key]}</option>
-                  <else />
-                  <option value="{$bank[$key]}">{$bank[$key]}</option>
-                </eq>
-              </volist>
-            </select></td>
+<!--           <td><select name="BankName" onchange="javasctip:bank_us(this.value);"> -->
+<!--               <volist name='bank' id='voo'> -->
+<!--                 <eq name='bank[$key]' value="$b_bank['bank_name']"> -->
+<!--                   <option value="{$bank[$key]}" selected="selected">{$bank[$key]}</option> -->
+<!--                   <else /> -->
+<!--                   <option value="{$bank[$key]}">{$bank[$key]}</option> -->
+<!--                 </eq> -->
+<!--               </volist> -->
+<!--             </select></td> -->
+		<td><input name="BankName" type="text" class="ipt" id="BankName" value="{$b_bank['bank_name']}" /></td>
           <td>&nbsp;</td>
         </tr>
         <tr>
